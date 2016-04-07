@@ -1,0 +1,116 @@
+@import "../globals/variables";
+
+
+.palette {
+  h4{
+    color:$color-brand-primary;
+  }
+
+  li {
+    background: white;
+    list-style: none;
+    display: inline-block;
+    .label {
+      color: black;
+    }
+    .swatch {
+      height: 50px;
+      //width: 200px;
+      border: solid 1px #ccc;
+    }
+  }
+}
+
+
+.color_btn_back{ background: $color-btn-back; }
+.color_btn_next{ background: $color-btn-next; }
+.color_btn_save{ background: $color-btn-search; }
+.color_btn_warning{ background: $color-btn-warning; }
+.color_btn_danger{ background: $color-btn-danger; }
+
+.color-brand-primary{ background: $color-brand-primary; }
+.color-brand-secondary{ background: $color-brand-secondary; }
+.color-background{ background: $color-background; }
+.color-link{ background: $color-link; }
+.color-alt-brand{ background: $color-alt-brand; }
+.color-default{ background: $color-default; }
+.color-success{ background: $color-success; }
+.color-danger{ background: $color-danger; }
+.color-warning{ background: $color-warning; }
+
+.color-brand-primary-1{ background: $color-brand-primary-1; }
+.color-brand-primary-2{ background: $color-brand-primary-2; }
+.color-brand-primary-3{ background: $color-brand-primary-3; }
+.color-brand-primary-4{ background: $color-brand-primary-4; }
+.color-brand-primary-5{ background: $color-brand-primary-5; }
+.color-brand-primary-6{ background: $color-brand-primary-6; }
+.color-brand-primary-7{ background: $color-brand-primary-7; }
+.color-brand-primary-8{ background: $color-brand-primary-8; }
+.color-brand-primary-9{ background: $color-brand-primary-9; }
+
+.color-grey{ background: $color-grey; }
+
+
+/*doc
+---
+title: color palette
+name: color_palette
+category: bases
+---
+
+```html_example
+<ul class="palette">
+
+  <!-- Brand colors -->
+  <div class="row">
+    <h4 class="text-semibold"> Brand colors</h4>
+    <li>
+      <div class="swatch color-brand-primary"></div>
+      <div class="label">.color-brand-primary</div>
+    </li>
+    <li>
+      <div class="swatch color-brand-secondary"></div>
+      <div class="label">.color-brand-secondary</div>
+    </li>
+    <li>
+      <div class="swatch color-background"></div>
+      <div class="label">.color-background</div>
+    </li>
+    <li>
+      <div class="swatch color-alt-brand"></div>
+      <div class="label">.color-alt-brand</div>
+    </li>
+  </div>
+
+  <!-- Link colors -->
+  <div class="row">
+    <h4 class="text-semibold"> Link colors</h4>
+    <li>
+      <div class="swatch color-link"></div>
+      <div class="label">.color-link </div>
+    </li>
+  </div>
+
+  <!-- State colors -->
+  <div class="row"><h4 class="text-semibold "> State colors</h4>
+     <li>
+      <div class="swatch color-default"></div>
+      <div class="label">.color-default</div>
+    </li>
+    <li>
+      <div class="swatch color-danger"></div>
+      <div class="label">.color-danger</div>
+    </li>
+    <li>
+      <div class="swatch color-success"></div>
+      <div class="label">.color-success</div>
+    </li>
+    <li>
+      <div class="swatch color-warning"></div>
+      <div class="label">.color-warning</div>
+    </li>
+  </div>
+
+</ul>
+```
+*/

@@ -1,0 +1,30 @@
+<!-- start of parent container -->
+<div class="container">
+
+  <!-- site navigation -->
+  <nav class="navbar navbar-static-top navbar-default" role="navigation">
+    <div class="container">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Styleguide", docs_path %></li>
+          <li><%= link_to "Launchpad", result_path %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of site navi -->
+
+  <div class="jumbotron center">
+    <h1>Flight Search</h1>
+    <p>
+      <%= link_to "Explore Styleguide", docs_path, class: "btn btn-primary btn-lg" %>
+    </p>
+    <p>
+      <%= link_to "Begin Flight Search", result_path, class: "btn btn-warning btn-lg" %>
+    </p>
+  </div>
+
+</div>
+

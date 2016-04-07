@@ -16,4 +16,10 @@ Install Gems
 > bundle install --without production
 ```
 
+Run Hologram to generate styleguide
+
+```
+> hologram 
+```
+
 Lay back and enjoy the magic :)

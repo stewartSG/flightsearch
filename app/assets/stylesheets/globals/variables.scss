@@ -7,17 +7,6 @@ $font-family-serif:       Georgia, 'Times New Roman', Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace;
 $font-family-base:        $font-family-source-sans;
 
-
-
-$regular: modular-scale(0);
-$small: (modular-scale(-0)*0.9);
-$smaller: modular-scale(-1)  ;
-$regular-plus: modular-scale(1);
-$regular-big: modular-scale(2);
-$regular-bigger: modular-scale(3);
-$regular-biggest: modular-scale(5);
-
-
 //Typography weights
 $text-semibold: 600;
 $text-heavy: 700;
@@ -29,36 +18,26 @@ $color-brand-secondary:#3498db;
 $color-alt-brand: #7f8c8d;
 $color-background: #fbfbf7;
 $color-link: $color-brand-secondary;
-$color-link-hover: shade($color-link,30%);
 $color-default:#ddd;
 $color-success: #27ae60;
 $color-danger: #e74c3c; //alizarin
 $color-warning: #e67e22;//carrot
 
-$color-brand-primary-1: tint($color-brand-primary, 10%);
-$color-brand-primary-2: tint($color-brand-primary, 20%);
-$color-brand-primary-3: tint($color-brand-primary, 30%);
-$color-brand-primary-4: tint($color-brand-primary, 40%);
-$color-brand-primary-5: tint($color-brand-primary, 50%);
-$color-brand-primary-6: tint($color-brand-primary, 60%);
-$color-brand-primary-7: tint($color-brand-primary, 70%);
-$color-brand-primary-8: tint($color-brand-primary, 80%);
-$color-brand-primary-9: tint($color-brand-primary, 90%);
+$color-brand-primary-1: $color-brand-primary, 10%;
+$color-brand-primary-2: $color-brand-primary, 20%;
+$color-brand-primary-3: $color-brand-primary, 30%;
+$color-brand-primary-4: $color-brand-primary, 40%;
+$color-brand-primary-5: $color-brand-primary, 50%;
+$color-brand-primary-6: $color-brand-primary, 60%;
+$color-brand-primary-7: $color-brand-primary, 70%;
+$color-brand-primary-8: $color-brand-primary, 80%;
+$color-brand-primary-9: $color-brand-primary, 90%;
 
 $color-grey: #656E6C;
-$color-grey-1: tint($color-grey, 10%);
-$color-grey-2: tint($color-grey, 20%);
-$color-grey-3: tint($color-grey, 30%);
-$color-grey-4: tint($color-grey, 40%);
-$color-grey-5: tint($color-grey, 50%);
-$color-grey-6: tint($color-grey, 60%);
-$color-grey-7: tint($color-grey, 70%);
-$color-grey-8: tint($color-grey, 80%);
-$color-grey-9: tint($color-grey, 90%);
 
 $color-btn-back: #9a9a9a;
 $color-btn-next: #47b5d6;
-$color-btn-save: #1AB998;
+$color-btn-search: #1AB998;
 $color-btn-warning: #f0ad4e;
 $color-btn-danger: #d9534f;
 $color-btn-text: #ffffff;
@@ -83,16 +62,10 @@ $color-form-disabled-background: #EFEFEF;
 $color-form-input-addon-background: #f4f4f4;
 $color-form-input-addon-text: #666;
 $color-form-input-addon-text-hover: #393939;
-$color-form-input-btn-background-hover: lighten($color-form-input-addon-background, 5%);
-$color-form-input-btn-background-pressed: darken($color-form-input-addon-background, 5%);
 $color-form-help-text: #F4F8FA;
-$color-form-help-text-background: lighten($color-brand-secondary, 30%);
 $color-datepicker-today: #ecf0ff;
 
-$color-alert-info-light: lighten($color-alert-info, 70%);
-$color-alert-success-light: lighten($color-alert-success, 70%);
-$color-alert-warning-light: lighten($color-alert-warning, 70%);
-$color-alert-error-light: lighten($color-alert-error, 70%);
+
 
 //controlling our margin & padding
 $none: 0;
@@ -106,16 +79,7 @@ $color-header-text : #a9cce3;
 $color-header-nav-active: #184c6f;
 
 $color-sidebar-nav: $color-brand-primary ;  //this defines the navi color,
-$color-sidebar-base: darken($color-sidebar-nav, 20%) ;
 
-$color-sidebar-link: tint($color-sidebar-nav,60%);
-$color-sidebar-link-hover: tint($color-sidebar-nav,80%);
-
-$color-sidebar-nav-hover:shade( $color-sidebar-nav, 5%);
-$color-sidebar-border-top: tint( $color-sidebar-nav, 5%);
-$color-sidebar-border-bottom: shade( $color-sidebar-nav, 5%);
-
-$color-sidebar-nav-selected:  shade( $color-sidebar-nav, 20%);
 $color-sidebar-nav-selected-link: #fff;  //shade( $color-sidebar-nav, 40%);
 $color-sidebar-nav-selected-link-hover: tint($color-sidebar-nav,20%);
 

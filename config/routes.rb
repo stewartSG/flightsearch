@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   # navigate to homepage
   root "pages#landing"
 
+  get 'result' => 'flightsearch#results'
+
 end
