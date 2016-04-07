@@ -1,0 +1,277 @@
+@import "globals/variables";
+@import "globals/margins";
+
+
+div.div-example {
+  width: 150px;
+  padding: 0px;
+  margin: 0px;
+  border: 5px solid $color-brand-primary;
+}
+
+div center{
+  background-color: $color-warning;
+}
+
+span.icon-title{
+  margin-left:0;
+}
+
+
+/*doc
+---
+title: override - margin
+name: override-1
+category: utility
+---
+
+```html_example
+<!-- default example -->
+<div class="row">
+  <div class="col-sm-12">
+    <span class="icon-title">regular style</span>
+    <div class="div-example">
+      <center>Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- margin-left styles-->
+<div class="row style">
+  <!-- margin-left-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-left-none</span>
+    <div class="div-example">
+      <center class="margin-left-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-left-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-left-sm</span>
+    <div class="div-example">
+      <center class="margin-left-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-left-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-left-md</span>
+    <div class="div-example">
+      <center class="margin-left-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-left-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-left-lg</span>
+    <div class="div-example">
+      <center class="margin-left-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- margin-right styles-->
+<div class="row style">
+  <!-- margin-right-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-right-none</span>
+    <div class="div-example">
+      <center class="margin-right-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-right-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-right-sm</span>
+    <div class="div-example">
+      <center class="margin-right-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-right-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-right-md</span>
+    <div class="div-example">
+      <center class="margin-right-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-right-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-right-lg</span>
+    <div class="div-example">
+      <center class="margin-right-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- margin-top styles-->
+<div class="row style">
+  <!-- margin-top-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-none</span>
+    <div class="div-example">
+      <center class="margin-top-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-top-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-sm</span>
+    <div class="div-example">
+      <center class="margin-top-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-top-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-md</span>
+    <div class="div-example">
+      <center class="margin-top-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-top-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-lg</span>
+    <div class="div-example">
+      <center class="margin-top-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- margin-bottom styles -->
+<div class="row style">
+  <!-- margin-bottom-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-btm-none</span>
+    <div class="div-example">
+      <center class="margin-btm-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-bottom-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-btm-sm</span>
+    <div class="div-example">
+      <center class="margin-btm-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-bottom-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-btm-md</span>
+    <div class="div-example">
+      <center class="margin-btm-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-bottom-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-btm-lg</span>
+    <div class="div-example">
+      <center class="margin-btm-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- margin-topdown styles -->
+<div class="row style">
+  <!-- margin-topdown-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-btm-none</span>
+    <div class="div-example">
+      <center class="margin-top-btm-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-topdown-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-btm-sm</span>
+    <div class="div-example">
+      <center class="margin-top-btm-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-topdown-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-btm-md</span>
+    <div class="div-example">
+      <center class="margin-top-btm-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-topdown-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-top-btm-lg</span>
+    <div class="div-example">
+      <center class="margin-top-btm-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- margin-left-right styles -->
+<div class="row style">
+  <!-- margin-topdown-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-lft-rgt-none</span>
+    <div class="div-example">
+      <center class="margin-lft-rgt-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-left-right-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-lft-rgt-sm</span>
+    <div class="div-example">
+      <center class="margin-lft-rgt-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-left-right-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-lft-rgt-sm</span>
+    <div class="div-example">
+      <center class="margin-lft-rgt-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-left-right-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-lft-rgt-lg</span>
+    <div class="div-example">
+      <center class="margin-lft-rgt-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- margin-overall styles -->
+<div class="row style">
+  <!-- margin-all-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-all-none</span>
+    <div class="div-example">
+      <center class="margin-all-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-topdown-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-all-sm</span>
+    <div class="div-example">
+      <center class="margin-all-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-topdown-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-all-md</span>
+    <div class="div-example">
+      <center class="margin-all-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- margin-topdown-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">margin-all-lg</span>
+    <div class="div-example">
+      <center class="margin-all-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+```
+*/

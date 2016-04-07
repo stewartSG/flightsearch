@@ -1,0 +1,174 @@
+@import "globals/variables";
+
+// padding mixins
+@mixin pad-lft($param) {
+  padding-left: $param !important;
+}
+@mixin pad-rgt($param) {
+  padding-right: $param !important;
+}
+@mixin pad-top($param) {
+  padding-top: $param !important;
+}
+@mixin pad-btm($param) {
+  padding-bottom: $param !important;
+}
+// no margins
+.pad-btm-none{
+  @include pad-lft($none);
+}
+.pad-top-none{
+  @include pad-top($none);
+}
+.pad-left-none{
+  @include pad-lft($none);
+}
+.pad-right-none{
+  @include pad-rgt($none);
+}
+.pad-lft-rgt-none{
+  @include pad-lft($none);
+  @include pad-rgt($none);
+}
+.pad-topdown-none{
+  @include pad-top($none);
+  @include pad-btm($none);
+}
+.pad-all-none{
+  @include pad-lft($none);
+  @include pad-top($none);
+  @include pad-btm($none);
+  @include pad-rgt($none);
+}
+
+
+
+// xs style margins
+.pad-btm-xs{
+  @include pad-lft($xs);
+}
+.pad-top-xs{
+  @include pad-top($xs);
+}
+.pad-left-xs{
+  @include pad-lft($xs);
+}
+.pad-right-xs{
+  @include pad-rgt($xs);
+}
+
+// sm style pads
+.pad-btm-sm{
+  @include pad-btm($sm);
+}
+.pad-top-sm{
+  @include pad-top($sm);
+}
+.pad-left-sm{
+  @include pad-lft($sm);
+}
+.pad-right-sm{
+  @include pad-rgt($sm);
+}
+
+// md style pads
+.pad-btm-md{
+  @include pad-btm($md);
+}
+.pad-top-md{
+  @include pad-top($md);
+}
+.pad-left-md{
+  @include pad-lft($md);
+}
+.pad-right-md{
+  @include pad-rgt($md);
+}
+
+// lg style pads
+.pad-btm-lg{
+  @include pad-btm($lg);
+}
+.pad-top-lg{
+  @include pad-top($lg);
+}
+.pad-left-lg{
+  @include pad-lft($lg);
+}
+.pad-right-lg{
+  @include pad-rgt($lg);
+}
+
+
+// xs-style top-down pad
+.pad-top-btm-xs{
+  @include pad-top($xs);
+  @include pad-btm($xs);
+}
+// sm-style left-right pad
+.pad-lft-rgt-xs{
+  @include pad-lft($xs);
+  @include pad-rgt($xs);
+}
+
+
+// md-style top-down pad
+.pad-top-btm-sm{
+  @include pad-top($sm);
+  @include pad-btm($sm);
+}
+// md-style left-right pad
+.pad-lft-rgt-sm{
+  @include pad-lft($sm);
+  @include pad-rgt($sm);
+}
+
+
+// md-style top-down pad
+.pad-top-btm-md{
+  @include pad-top($md);
+  @include pad-btm($md);
+}
+// md-style left-right pad
+.pad-lft-rgt-md{
+  @include pad-lft($md);
+  @include pad-rgt($md);
+}
+
+
+// lg-style top-down pad
+.pad-top-btm-lg{
+  @include pad-top($lg);
+  @include pad-btm($lg);
+}
+// lg-style left-right pad
+.pad-lft-rgt-lg{
+  @include pad-lft($lg);
+  @include pad-rgt($lg);
+}
+
+// pad overall padding
+.pad-all-xs{
+  @include pad-lft($xs);
+  @include pad-top($xs);
+  @include pad-btm($xs);
+  @include pad-rgt($xs);
+}
+.pad-all-sm{
+  @include pad-lft($sm);
+  @include pad-top($sm);
+  @include pad-btm($sm);
+  @include pad-rgt($sm);
+}
+.pad-all-md{
+  @include pad-lft($md);
+  @include pad-top($md);
+  @include pad-btm($md);
+  @include pad-rgt($md);
+}
+.pad-all-lg{
+  @include pad-lft($lg);
+  @include pad-top($lg);
+  @include pad-btm($lg);
+  @include pad-rgt($lg);
+}

@@ -1,0 +1,203 @@
+/*doc
+---
+title: Common Icons
+name: icon-1
+category: icons
+---
+```html_example
+<div class="row icon-show">
+  <!-- check boxes -->
+  <span class="icon-title">Form Checkboxes</span>
+  <div class="row icon-desc">
+    <div class="col-md-3 col-sm-6"><i class="fa fa-check"></i>fa-check</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-check-square"></i>fa-check-square</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-check-square-o"></i>fa-check-square-o</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-check-circle"></i>fa-check-circle</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-check-circle-o"></i>fa-check-circle-o</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-circle-o"></i>fa-check-circle-o</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-circle"></i>fa-circle</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-square"></i>fa-square</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-square-o"></i>fa-square-o</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-minus"></i>fa-minus</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-minus-circle"></i>fa-minus-circle</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-minus-square"></i>fa-minus-square</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-minus-square-o"></i>fa-minus-square-o</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-plus"></i>fa-plus</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-plus-square"></i>fa-plus-square</div>
+    <div class="col-md-3 col-sm-6"><i class="fa fa-plus-square-o"></i>fa-plus-square-o</div>
+  </div>
+  <!-- Warnings and Notifications -->
+  <span class="icon-title">Warnings and Notifications</span>
+  <div class="row icon-desc">
+    <div class="col-md-3 col-sm-3"><i class="fa fa-ban"></i>fa-ban</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-exclamation"></i>fa-exclamation</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-question"></i>fa-question</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-bell"></i>fa-bell</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-bell-o"></i>fa-bell-o</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-comment"></i>fa-comment</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-comment-o"></i>fa-comment-o</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-info"></i>fa-info</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-info-circle"></i>fa-info-circle</div>
+  </div>
+  <!-- Folders -->
+  <span class="icon-title">Folders</span>
+  <div class="row icon-desc">
+    <div class="col-md-3 col-sm-3"><i class="fa fa-folder"></i> fa-folder</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-folder-o"></i>fa-folder-o</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-folder-open"></i>fa-folder-open</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-folder-open-o"></i>fa-folder-open-on</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-gear"></i>fa-gear</div>
+  </div>
+   <!-- Other Icons-->
+  <span class="icon-title">Other Icons</span>
+  <div class="row icon-desc">
+    <div class="col-md-3 col-sm-3"><i class="fa fa-home"></i>fa-home</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-lock"></i>fa-lock</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-mail-reply"></i>fa-mail-reply</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-dollar"></i>fa-dollar</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-save"></i>fa-save</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-angle-up"></i>fa-angle-up</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-angle-down"></i>fa-angle-down</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-angle-left"></i>fa-angle-left</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-angle-right"></i>fa-angle-right</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-arrow-up"></i>fa-arrow-up</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-arrow-down"></i>fa-arrow-down</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-arrow-left"></i>fa-arrow-left</div>
+    <div class="col-md-3 col-sm-3"><i class="fa fa-arrow-right"></i>fa-arrow-right</div>
+  </div>
+</div>
+```
+*/
+
+
+/*doc
+---
+title: Icon Resize
+name: icon-2
+category: icons
+---
+
+```html_example
+<div class="col-md-12">
+  <p><i class="fa fa-camera-retro"></i><span class="labels">Regular</span></p>
+  <p><i class="fa fa-camera-retro fa-2x"></i><span class="labels">Enlarge using fa-2x</span></p>
+  <p><i class="fa fa-camera-retro fa-3x"></i><span class="labels">Enlarge using fa-3x</span></p>
+  <p><i class="fa fa-camera-retro fa-4x"></i><span class="labels">Enlarge using fa-4x</span></p>
+</div>
+```
+*/
+.fa-2x{
+  font-size: 2em !important;
+}
+.fa-3x{
+  font-size: 3em !important;
+}
+.fa-4x{
+  font-size: 4em !important;
+}
+
+
+/*doc
+---
+title: Icon Rotations
+name: icon-3
+category: icons
+---
+
+```html_example
+<div class="row">
+    <p style="font-size: 14px; line-height:28px;">
+      <i class="fa fa-shield"></i><span class="labels">Normal</span></p>
+      <i class="fa fa-shield fa-rotate-90"></i><span class="labels">fa-rotate-90</span></p>
+      <i class="fa fa-shield fa-rotate-180"></i><span class="labels">fa-rotate-180</span></p>
+      <i class="fa fa-shield fa-rotate-270"></i><span class="labels">fa-rotate-270</span></p>
+      <i class="fa fa-shield fa-flip-horizontal"></i><span class="labels">a-flip-horizontal</span></p>
+      <i class="fa fa-shield fa-flip-vertical"></i><span class="labels">fa-flip-vertical</span></p>
+    </p>
+</div>
+```
+*/
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+
+/*doc
+---
+title: list icons
+name: icon-4
+category: icons
+---
+
+```html_example
+<div class="row">
+  <!-- Spinner Icons -->
+  <div class="col-md-6 col-sm-6">
+   <ul class="fa-ul">
+      <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+      <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+      <li><i class="fa-li fa fa-square"></i>in lists</li>
+    </ul>
+  </div>
+</div>
+```
+*/
+
+
+/*doc
+---
+title: animated icons
+name: icon-5
+category: icons
+---
+
+```html_example
+<div class="row">
+  <!-- Spinner Icons -->
+  <div class="col-md-6 col-sm-6">
+    <i class="fa fa-circle-o-notch fa-spin"></i>
+    <i class="fa fa-refresh fa-spin"></i>
+    <i class="fa fa-cog fa-spin"></i>
+    <i class="fa fa-spinner fa-pulse"></i>
+    <i class="fa fa-spinner fa-spin"></i>
+  </div>
+</div>
+```
+*/

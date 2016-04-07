@@ -1,0 +1,39 @@
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+// Additional padding to compensate for mobile nav bar
+body {
+  padding-top: 50px;
+}
+
+@media (min-width: 978px) {
+  body {
+    padding: 0;
+  }
+}
+
+.business-header {
+  ///*height: 400px;*/
+  /*background: url('http://placehold.it/1200x1200') center center no-repeat scroll;*/
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  background-size:cover;
+  -o-background-size:cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+.tagline {
+  text-shadow: 0 0 10px #000;
+  color:#fff;
+}
+
+.img-center {
+  margin: 0 auto
+}
+
+.center {
+  text-align: center;
+}

@@ -1,0 +1,94 @@
+@import "globals/variables";
+
+.display-example{
+  min-width: 70px;
+  max-width: 70px;
+  display: inline;
+  background-color: $color-danger;
+  border: 3px solid black;
+  text-align: center;
+  color: black;
+  font-size: $small;
+}
+
+.block{
+  display:block !important;
+}
+.inline{
+  display:inline !important;
+}
+.inline-block{
+  display:inline-block !important;
+}
+
+
+/*doc
+---
+title: display properties
+name: override-4
+category: utility
+---
+
+```html_example
+<!-- default example -->
+<div class="row">
+  <div class="col-md-12 margin-top-btm-lg">
+    <div class="col-md-4">
+      <h2>Block</h2>
+      A "block-level element"</br>
+      - can contain all other elements!</br>
+      - can only be inside other block-level elements</br>
+      - defines a rectangular region on the page</br>
+      - tries to be as wide as possible</br>
+      - begins on a "new line"
+     </div>
+
+    <div class="col-md-4">
+      <h2>Span</h2>
+      - An "inline element"</br>
+      - cannot contain block-level elements!</br>
+      - can be inside any other element </br>
+      - tries to be as small as possible</br>
+      - doesn't create any new lines.
+     </div>
+
+     <div class="col-md-4">
+      <h2>Inline-block</h2>
+      - An "hybrid element"</br>
+      - Creates a rectangular region (a block)</br>
+      - Doesn't create any new lines (hence "in line")</br>
+     </div>
+
+  </div>
+
+  <div class="col-md-12 margin-top-lg">
+    <!-- block -->
+    <div class="col-sm-4">
+        <h3 class="text-primary">display: block</h3>
+        <div class="display-example block">snake</div>
+        <div class="display-example block">snake</div>
+        <div class="display-example block">snake</div>
+    </div>
+
+    <!-- inline-block -->
+    <div class="col-sm-4">
+        <h3 class="text-primary">display: inline</h3>
+        <div class="display-example inline">snake</div>
+        <div class="display-example inline">snake</div>
+        <div class="display-example inline">snake</div>
+    </div>
+
+    <!-- inline-block -->
+    <div class="col-sm-4">
+        <h3 class="text-primary">display: inline-block</h3>
+        <div class="display-example inline-block">snake</div>
+        <div class="display-example inline-block">snake</div>
+        <div class="display-example inline-block">snake</div>
+    </div>
+  </div>
+</div>
+
+<hr>
+```
+*/
+

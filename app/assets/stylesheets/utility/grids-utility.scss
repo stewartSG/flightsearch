@@ -1,0 +1,161 @@
+@import "globals/variables";
+@import "globals/grids";
+
+/* styling to make columns the same height */
+.row-full-height {
+  height: 100%;
+}
+.col-full-height {
+  height: 100%;
+  vertical-align: middle;
+}
+.row-same-height {
+  display: table;
+  width: 100%;
+  /* fix overflow */
+  table-layout: fixed;
+}
+.col-xs-height {
+  display: table-cell;
+  float: none !important;
+}
+
+@media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+
+/* container styling */
+.grid-demo-item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #cecece;
+  padding: 12px 6px;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #f4f4f4), color-stop(100%, #ededed));
+  background: -moz-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+  background: -ms-linear-gradient(top, #f4f4f4 0%, #ededed 100%);
+}
+
+/* grid-demo-content styles */
+
+.grid-demo-item {
+  display: table;
+}
+.grid-demo-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+// removing gutters for columns by calling no-gutters class on rows
+.cols-xs-6.cols-sm-3.kitten-box{
+  img{
+    width: 100%;
+    height: 150px;
+  }
+}
+
+// removing gutters for columns by calling no-gutters class on rows
+.col-xs-6.col-sm-3.kitten-box{
+  img{
+    width: 100%;
+    height: 150px;
+  }
+}
+
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+/*doc
+---
+title: Grid
+name: override-5
+category: utility
+---
+```html_example
+
+<div class="row">
+  <div class="row-same-height row-full-height">
+
+    <div class="col-xs-6 col-xs-height col-full-height">
+      <div class="grid-demo-item"><div class="grid-demo-content">
+          <br><br><br><br><br><br><br>This is the longest column.
+          The rest are empty.
+          Include the CSS classes "col-xs-height col-full-height"
+          in all columns to make them the same height as max height.
+      </div></div>
+    </div>
+    <div class="col-xs-3 col-xs-height col-full-height"><div class="grid-demo-item"><div class="grid-demo-content"></div></div></div>
+    <div class="col-xs-2 col-xs-height col-full-height"><div class="grid-demo-item"><div class="grid-demo-content"></div></div></div>
+    <div class="col-xs-1 col-xs-height col-full-height"><div class="grid-demo-item"><div class="grid-demo-content"></div></div></div>
+
+  </div>
+</div>
+
+
+```
+*/
+
+
+/*doc
+---
+title: Column no Gutters
+name: utility-6
+category: utility
+---
+```html_example
+<!-- with gutters -->
+<div class="container">
+  <h3>Bootstrap Regular Gutters Example</h3>
+  <div class="row">
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+  </div>
+</div>
+
+<!-- without gutters -->
+<div class="container">
+  <h3>Bootstrap <code>.no-gutters</code> Example</h3>
+  <div class="row no-gutters">
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="col-xs-6 col-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+  </div>
+</div>
+
+  <h3>Bootstrap <code>.cols</code> xample</h3>
+  <div class="row">
+    <div class="cols-xs-6 cols-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="cols-xs-6 cols-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="cols-xs-6 cols-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+    <div class="cols-xs-6 cols-sm-3 kitten-box"><img src="http://i.imgur.com/5cjk6EQ.jpg" alt="kittens"></div>
+  </div>
+```
+*/

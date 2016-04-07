@@ -14,17 +14,24 @@
  *= require_self
  */
 
-
-// default
+// css frameworks
 @import "bootstrap";
 @import "bourbon";
 
-// media queries
-@import "globals/mediaquery";
+// icons
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
-// mixins
+// mixins for global variables
 @import "globals/variables";
 
+// media query control
+@import "globals/margins";
 
+// bases for global style control
 @import "bases/*";
 
+// components
+@import "/vendor/nouislider.min.css";
+@import "vendor/nouislider.pips.css";
+@import "vendor/nouislider.tooltips.css";

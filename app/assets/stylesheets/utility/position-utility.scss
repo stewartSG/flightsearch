@@ -1,0 +1,157 @@
+@import "globals/variables";
+
+
+// Demo #1 /
+// aligning the text positioning
+.txt-center{
+  text-align: center !important;
+}
+.txt-right{
+  text-align: right !important;
+}
+.txt-left{
+  text-align: left !important;
+}
+// positioning
+.pos-absolute{
+  position: absolute !important;
+}
+.pos-relative{
+  position: relative !important;
+}
+
+// demo #2  //
+//aligning the div positioning
+.float-center{
+  margin:0 auto !important;
+}
+.float-left{
+  float:left !important;
+}
+.float-right{
+  float:right !important;
+}
+//clearing floating objects
+.clear-left{
+  clear: left !important;
+}
+.clear-right{
+  clear: right !important;
+}
+.clear-both{
+  clear: both !important;
+}
+
+
+// example div styling //
+.example-text{
+  color : #fff;
+}
+.display-example2{
+  width: 700px;
+  height: 350px;
+  background: #f4f4f4;
+  &.override{
+    height: 150px;
+  }
+}
+.example-box{
+  width: 150px;
+  height: 50px;
+  background-color: #27ae60;
+}
+#example_1{
+  width: 150px;
+  height: 180px;
+  top: 100px;
+  right: 50px;
+  background-color: #e67e22;
+}
+#example_2{
+  width: 150px;
+  height: 180px;
+  left: 0;
+  right: 0;
+  background-color: #27ae60;
+}
+#example_3{
+  width: 150px;
+  height: 180px;
+  left: 20px;
+  right: 20px;
+  background-color: #27ae60;
+}
+
+
+/*doc
+---
+title: position properties
+name: override-3
+category: utility
+---
+
+```html_example
+<!-- Demo #1 -->
+<p class="icon-title txt-center">Demo #1 - Position Elements and Text-Align Classes</p>
+<div class="row">
+  <div class="display-example2 float-center">
+      <div id="example_1" class="pos-absolute txt-left">
+        <span class="small">
+        <h5 class="example-text">pos-absolute, txt-left</h5>
+        - Position: absolute</br>
+        - top: 100px </br>
+        - right: 50px
+        - text-align: left
+        </span>
+      </div>
+      <div id="example_2" class="pos-relative txt-right">
+        <span class="small">
+        <h5 class="example-text">pos-relative, txt-right</h5>
+        - Position: relative</br>
+        - left: 0px</br>
+        - right: 0px</br>
+        - text-align: right
+        </span>
+      </div>
+      <div id="example_3" class="pos-relative txt-center">
+        <span class="small">
+        <h5 class="example-text">pos-relative <p/> txt-center</h5>
+        - Position: relative</br>
+        - left: 20px</br>
+        - right: 20px
+        - text-align: center
+        </span>
+      </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- Demo #2 -->
+<p class="icon-title txt-center">Demo #2 - Float classes</p>
+<div class="row">
+  <div class="display-example2 override float-center">
+      <div class="example-box inline float-left">
+        <span class="small">
+        <h5 class="example-text txt-center">float-left +
+        <p>txt-center</h5>
+        </span>
+      </div>
+      <div class="example-box inline float-right">
+        <span class="small">
+        <h5 class="example-text txt-left">float-right +
+        <p> txt-left</h5>
+        </span>
+      </div>
+      <div class="row">
+        <div class="example-box float-center">
+          <span class="small">
+            <h5 class="example-text txt-right">float-center +
+            <p> txt-right</h5>
+          </span>
+        </div>
+      </div>
+  </div>
+</div>
+```
+*/

@@ -1,0 +1,183 @@
+@import "globals/variables";
+
+// margin mixins
+@mixin margin-lft($param) {
+  margin-left: $param !important;
+}
+@mixin margin-rgt($param) {
+  margin-right: $param !important;
+}
+@mixin margin-top($param) {
+  margin-top: $param !important;
+}
+@mixin margin-btm($param) {
+  margin-bottom: $param !important;
+}
+
+// no margins
+.margin-btm-none{
+  @include margin-btm($none);
+}
+.margin-top-none{
+  @include margin-top($none);
+}
+.margin-left-none{
+  @include margin-lft($none);
+}
+.margin-right-none{
+  @include margin-rgt($none);
+}
+.margin-lft-rgt-none{
+  @include margin-lft($none);
+  @include margin-rgt($none);
+}
+.margin-top-btm-none{
+  @include margin-top($none);
+  @include margin-btm($none);
+}
+.margin-all-none{
+  @include margin-lft($none);
+  @include margin-top($none);
+  @include margin-btm($none);
+  @include margin-rgt($none);
+}
+
+
+
+// xs style margins
+.margin-btm-xs{
+  @include margin-btm($xs);
+}
+.margin-top-xs{
+  @include margin-top($xs);
+}
+.margin-left-xs{
+  @include margin-lft($xs);
+}
+.margin-right-xs{
+  @include margin-rgt($xs);
+}
+
+// sm style margins
+.margin-btm-sm{
+  @include margin-btm($sm);
+}
+.margin-top-sm{
+  @include margin-top($sm);
+}
+.margin-left-sm{
+  @include margin-lft($sm);
+}
+.margin-right-sm{
+  @include margin-rgt($sm);
+}
+
+// md style margins
+.margin-btm-md{
+  @include margin-btm($md);
+}
+.margin-top-md{
+  @include margin-top($md);
+}
+.margin-left-md{
+  @include margin-lft($md);
+}
+.margin-right-md{
+  @include margin-rgt($md);
+}
+
+// lg style margins
+.margin-btm-lg{
+  @include margin-btm($lg);
+}
+.margin-top-lg{
+  @include margin-top($lg);
+}
+.margin-left-lg{
+  @include margin-lft($lg);
+}
+.margin-right-lg{
+  @include margin-rgt($lg);
+}
+
+
+// xs-style top-down margin
+.margin-top-btm-xs{
+  @include margin-top($xs);
+  @include margin-btm($xs);
+}
+// sm-style left-right margin
+.margin-lft-rgt-xs{
+  @include margin-lft($xs);
+  @include margin-rgt($xs);
+}
+
+
+// md-style top-down margin
+.margin-top-btm-sm{
+  @include margin-top($sm);
+  @include margin-btm($sm);
+}
+// md-style left-right margin
+.margin-lft-rgt-sm{
+  @include margin-lft($sm);
+  @include margin-rgt($sm);
+}
+
+
+// md-style top-down margin
+.margin-top-btm-md{
+  @include margin-top($md);
+  @include margin-btm($md);
+}
+// md-style left-right margin
+.margin-lft-rgt-md{
+  @include margin-lft($md);
+  @include margin-rgt($md);
+}
+
+
+// lg-style top-down margin
+.margin-top-btm-lg{
+  @include margin-top($lg);
+  @include margin-btm($lg);
+}
+// lg-style left-right margin
+.margin-lft-rgt-lg{
+  @include margin-lft($lg);
+  @include margin-rgt($lg);
+}
+
+
+// sm-style top-left margin
+.margin-top-lft-sm{
+  @include margin-top($sm);
+  @include margin-lft($sm);
+}
+
+// margin overall padding
+.margin-all-xs{
+  @include margin-lft($xs);
+  @include margin-top($xs);
+  @include margin-btm($xs);
+  @include margin-rgt($xs);
+}
+.margin-all-sm{
+  @include margin-lft($sm);
+  @include margin-top($sm);
+  @include margin-btm($sm);
+  @include margin-rgt($sm);
+}
+.margin-all-md{
+  @include margin-lft($md);
+  @include margin-top($md);
+  @include margin-btm($md);
+  @include margin-rgt($md);
+}
+.margin-all-lg{
+  @include margin-lft($lg);
+  @include margin-top($lg);
+  @include margin-btm($lg);
+  @include margin-rgt($lg);
+}
+

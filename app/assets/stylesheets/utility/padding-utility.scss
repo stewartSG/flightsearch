@@ -1,0 +1,257 @@
+/*doc
+---
+title: override - padding
+name: override-2
+category: utility
+---
+
+```html_example
+<!-- default example -->
+<div class="row">
+  <div class="col-sm-12">
+    <span class="icon-title">regular style</span>
+    <div class="div-example">
+      <center>Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- padding-left styles-->
+<div class="row style">
+  <!-- padding-left-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-left-none</span>
+    <div class="div-example">
+      <center class="pad-left-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-left-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-left-sm</span>
+    <div class="div-example">
+      <center class="pad-left-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-left-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-left-md</span>
+    <div class="div-example">
+      <center class="pad-left-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-left-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-left-lg</span>
+    <div class="div-example">
+      <center class="pad-left-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- padding-right styles-->
+<div class="row style">
+  <!-- padding-right-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-right-none</span>
+    <div class="div-example">
+      <center class="pad-right-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-right-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-right-sm</span>
+    <div class="div-example">
+      <center class="pad-right-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-right-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-right-md</span>
+    <div class="div-example">
+      <center class="pad-right-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-right-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-right-lg</span>
+    <div class="div-example">
+      <center class="pad-right-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- padding-top styles-->
+<div class="row style">
+  <!-- padding-top-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-top-none</span>
+    <div class="div-example">
+      <center class="pad-top-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-top-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-top-sm</span>
+    <div class="div-example">
+      <center class="pad-top-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-top-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-top-md</span>
+    <div class="div-example">
+      <center class="pad-top-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-top-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-top-lg</span>
+    <div class="div-example">
+      <center class="pad-top-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- padding-bottom styles -->
+<div class="row style">
+  <!-- padding-bottom-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-btm-none</span>
+    <div class="div-example">
+      <center class="pad-btm-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-bottom-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-btm-sm</span>
+    <div class="div-example">
+      <center class="pad-btm-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-bottom-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-btm-md</span>
+    <div class="div-example">
+      <center class="pad-btm-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-bottom-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-btm-lg</span>
+    <div class="div-example">
+      <center class="pad-btm-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- padding-topdown styles -->
+<div class="row style">
+  <!-- padding-topdown-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-topdown-none</span>
+    <div class="div-example">
+      <center class="pad-topdown-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-topdown-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-top-btm-sm</span>
+    <div class="div-example">
+      <center class="pad-top-btm-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-topdown-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-top-btm-md</span>
+    <div class="div-example">
+      <center class="pad-top-btm-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-topdown-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-top-btm-lg</span>
+    <div class="div-example">
+      <center class="pad-top-btm-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- padding-left-right styles -->
+<div class="row style">
+  <!-- padding-topdown-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-topdown-none</span>
+    <div class="div-example">
+      <center class="pad-topdown-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-left-right-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-lft-rgt-sm</span>
+    <div class="div-example">
+      <center class="pad-lft-rgt-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-left-right-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-lft-rgt-sm</span>
+    <div class="div-example">
+      <center class="pad-lft-rgt-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-left-right-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-lft-rgt-lg</span>
+    <div class="div-example">
+      <center class="pad-lft-rgt-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- padding-overall styles -->
+<div class="row style">
+  <!-- padding-topdown-none -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-all-none</span>
+    <div class="div-example">
+      <center class="pad-all-none">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-topdown-sm -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-all-sm</span>
+    <div class="div-example">
+      <center class="pad-all-sm">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-topdown-md -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-all-md</span>
+    <div class="div-example">
+      <center class="pad-all-md">Gangnam Style</center>
+    </div>
+  </div>
+  <!-- padding-topdown-lg -->
+  <div class="col-sm-3">
+    <span class="icon-title">padding-all-lg</span>
+    <div class="div-example">
+      <center class="pad-all-lg">Gangnam Style</center>
+    </div>
+  </div>
+</div>
+```
+*/
