@@ -10,14 +10,21 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ //*= require_tree .
  *= require_self
  */
 
 
 // default
 @import "bootstrap";
+@import "bourbon";
+
+// media queries
+@import "globals/mediaquery";
 
 // mixins
 @import "globals/variables";
- 
+
+
+@import "bases/*";
+

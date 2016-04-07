@@ -7,6 +7,14 @@ $font-family-serif:       Georgia, 'Times New Roman', Times, serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace;
 $font-family-base:        $font-family-source-sans;
 
+/* scaling our font size via Bourbon modular scale */
+$modular-scale-base: 16px;
+$regular: modular-scale(0);
+$regular-plus: modular-scale(1);
+$regular-big: modular-scale(2);
+$regular-bigger: modular-scale(3);
+$regular-biggest: modular-scale(5);
+
 //Typography weights
 $text-semibold: 600;
 $text-heavy: 700;
@@ -65,8 +73,6 @@ $color-form-input-addon-text-hover: #393939;
 $color-form-help-text: #F4F8FA;
 $color-datepicker-today: #ecf0ff;
 
-
-
 //controlling our margin & padding
 $none: 0;
 $xs: 5px;
@@ -77,11 +83,8 @@ $lg : 20px;
 // for header
 $color-header-text : #a9cce3;
 $color-header-nav-active: #184c6f;
-
-$color-sidebar-nav: $color-brand-primary ;  //this defines the navi color,
-
-$color-sidebar-nav-selected-link: #fff;  //shade( $color-sidebar-nav, 40%);
-$color-sidebar-nav-selected-link-hover: tint($color-sidebar-nav,20%);
+$color-sidebar-nav: $color-brand-primary ;
+$color-sidebar-nav-selected-link: #fff;
 
 // for form
 $field-side-padding: 0.6em;

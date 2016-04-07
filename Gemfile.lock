@@ -47,6 +47,9 @@ GEM
     bootstrap-sass (3.3.4.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
+    bourbon (4.2.3)
+      sass (~> 3.4)
+      thor
     builder (3.2.2)
     byebug (8.2.3)
     coffee-rails (4.1.1)
@@ -162,6 +165,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-datepicker-rails
   bootstrap-sass (~> 3.3.4.1)
+  bourbon
   byebug
   font-awesome-sass (~> 4.3.0)
   hologram
