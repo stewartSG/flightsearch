@@ -1,0 +1,28 @@
+/ Hamburger nav section (For Mobile)
+= render 'flightsearch/section/top_navbar'
+/ Header section
+= render 'flightsearch/section/header'
+/ content container
+.container
+  .row
+    / Left nav bar
+    .col-lg-4.pad-all-none
+      / Flight Search Widget - Enter search values
+      = render 'flightsearch/component/searchinput'
+      / Refine Flight Search - Price slider widget
+      = render 'flightsearch/component/rangeslider'
+    / main content
+    .col-lg-8
+      / Search results
+      = render 'flightsearch/section/resultsheader'
+      .row
+      / rendering of result cards
+      = render 'flightsearch/component/resultcard'
+      = render 'flightsearch/component/resultcard'
+      = render 'flightsearch/component/resultcard'
+      = render 'flightsearch/component/resultcard'
+      = render 'flightsearch/component/resultcard'
+  / end of result cards
+  / /.row
+  %hr/
+/ /.container
