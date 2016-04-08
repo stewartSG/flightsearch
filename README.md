@@ -51,14 +51,12 @@ We rely on JS libraries primarily for widget / interaction purpose that isn't su
 ## 10.0 Acknolwedgements
 - Thank you TW and Infant for giving me the opportunity to work on this. Shall improve on it and push some fixes ASAP! :) 
 
-# Known issues
-- Hamburger menu on mobile is experiencing issues, will be fixed as part of hotfixes today
+# Known issues 
 - Style guide forms section needs some updating to refresh old components phased out
 - Style guide sections for utility has some templating issues that is causing navigational problems
 
 # Usability Test Notes:
-- So far, project is tested on iPad Air 2, Macbook Retina on OSX Yosemite, iPhone 6 on Safari / Chrome and seems to be working fine in terms of responsiveness and usability.
-- Hamburger menu issue is to be fixed in next hotfix push
+- So far, project is tested on iPad Air 2, 15" Macbook Retina on OSX Yosemite on Chrome/Safari, iPhone 6 on Safari / Chrome and seems to be working fine in terms of responsiveness and usability. 
 
 ## Prerequisites
 - ruby 2.2.3
