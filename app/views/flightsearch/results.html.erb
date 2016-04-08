@@ -1,0 +1,50 @@
+<!-- Hamburger nav section (For Mobile) -->
+<%= render 'flightsearch/section/top_navbar' %>
+
+<!-- Header section -->
+<%= render 'flightsearch/section/header' %>
+
+<!-- content container -->
+<div class='container'>
+  <div class='row'>
+    <!-- Left nav bar -->
+    <div class='col-lg-4 pad-all-none'>
+      <!-- Flight Search Widget - Enter search values -->
+      <%= render 'flightsearch/component/searchinput' %>
+
+      <!-- Refine Flight Search - Price slider widget -->
+      <%= render 'flightsearch/component/rangeslider' %>
+    </div>
+
+    <!-- main content -->
+    <div class='col-lg-8'>
+      <!-- Search results -->
+      <%= render 'flightsearch/section/resultsheader' %>
+
+      <div class='row'></div>
+      <!-- card 1-->
+      <%= render 'flightsearch/component/resultcard' %>
+      <!-- end of card 1-->
+
+      <!-- card 2-->
+      <%= render 'flightsearch/component/resultcard' %>
+      <!-- end of card 2 -->
+
+      <!-- card 3 -->
+      <%= render 'flightsearch/component/resultcard' %>
+      <!-- end of card 3 -->
+
+      <!-- card 4 -->
+      <%= render 'flightsearch/component/resultcard' %>
+      <!-- end of card 4 -->
+
+      <!-- card 5 -->
+      <%= render 'flightsearch/component/resultcard' %>
+      <!-- end of card 5 -->
+
+    </div>
+  </div>
+  <!-- /.row -->
+  <hr>
+</div>
+<!-- /.container -->

@@ -1,0 +1,60 @@
+.well.color-background
+  %ul#tabs.nav.nav-tabs.rounded{"data-tabs" => "tabs"}
+    %li.active
+      %a{"data-toggle" => "tab", :href => "#return"} Return
+    %li
+      %a{"data-toggle" => "tab", :href => "#single"} One Way
+  #my-tab-content.tab-content.table-bordered
+    / return triptab
+    #return.tab-pane.active
+      .row.margin-lft-rgt-md
+        .input-group
+          .form-row
+            %label.margin-all-none{:for => "from"} From
+            %input#from{:type => "text"}/
+          .form-row.margin-top-none
+            %label.margin-all-none{:for => "destination"} Destination
+            %input#destination{:type => "text"}/
+          .form-row.margin-top-none
+            %label.margin-all-none{:for => "departuredate"} Departure Date
+            .cols-sm-12
+              .form-group.margin-all-none
+                #roundtrip-departure-date.input-group.date.margin-top-xs
+                  %input.form-control{:type => "text"}/
+                  %span.input-group-addon
+                    %span.fa.fa-calendar
+          .form-row.margin-top-none
+            %label.margin-all-none{:for => "returndate"} Return Date
+            .cols-sm-12
+              .form-group.margin-all-none
+                #roundtrip-return-date.input-group.date.margin-top-xs
+                  %input.form-control{:type => "text"}/
+                  %span.input-group-addon
+                    %span.fa.fa-calendar
+          .form-row.margin-top-none
+            %label.margin-all-none{:for => "passenger"} Passengers
+            %input#passengers{:type => "text"}/
+          .form-row.margin-top-none.center
+            %button.btn.btn-reg Search
+    #single.tab-pane
+      .row.margin-lft-rgt-md
+        .input-group
+          .form-row
+            %label.margin-all-none{:for => "from"} From
+            %input#from{:type => "text"}/
+          .form-row.margin-top-none
+            %label.margin-all-none{:for => "destination"} Destination
+            %input#destination{:type => "text"}/
+          .form-row.margin-top-none
+            %label.margin-all-none{:for => "departuredate"} Departure Date
+            .cols-sm-12
+              .form-group.margin-all-none
+                #singletrip-departure-date.input-group.date.margin-top-xs
+                  %input.form-control{:type => "text"}/
+                  %span.input-group-addon
+                    %span.fa.fa-calendar
+          .form-row.margin-top-none
+            %label.margin-all-none{:for => "passenger"} Passengers
+            %input#passengers{:type => "text"}/
+          .form-row.margin-top-none.center
+            %button.btn.btn-reg Search
