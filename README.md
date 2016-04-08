@@ -1,19 +1,5 @@
 # FlightSearch v0.1
 
-# Known issues
-- Hamburger menu on mobile is experiencing issues, will be fixed as part of hotfixes today
-- Style guide forms section needs some updating to refresh old components phased out
-- Style guide sections for utility has some templating issues that is causing navigational problems
-
-# Special Notes:
-- Demo Site is available via : http://188.166.212.240/
-- Access the styleguide generated via Hologram via : http://188.166.212.240/styleguide/bases.html
-- Access the actual flight results page via : http://188.166.212.240/result
-
-# Usability Test Notes:
-- So far, project is tested on iPad Air 2, Macbook Retina on OSX Yosemite, iPhone 6 on Safari / Chrome and seems to be working fine in terms of responsiveness and usability.
-- Hamburger menu issue is to be fixed in next hotfix push
-
 ## 1.0 Browsers Supported
 - In order to be compatible with as many devices as possible, we support the following browsers : Google Chrome, Mozilla Firefox 3.6+, Opera 12+, Safari 5+, Internet Explorer 9 
 
@@ -59,6 +45,21 @@ We rely on JS libraries primarily for widget / interaction purpose that isn't su
 
 ## 10.0 Acknolwedgements
 - Thank you TW and Infant for giving me the opportunity to work on this. Shall improve on it and push some fixes ASAP! :) 
+
+# Known issues
+- Hamburger menu on mobile is experiencing issues, will be fixed as part of hotfixes today
+- Style guide forms section needs some updating to refresh old components phased out
+- Style guide sections for utility has some templating issues that is causing navigational problems
+
+# Special Notes:
+- Demo Site is available via : http://188.166.212.240/
+- Access the styleguide generated via Hologram via : http://188.166.212.240/styleguide/bases.html
+- Access the actual flight results page via : http://188.166.212.240/result
+
+# Usability Test Notes:
+- So far, project is tested on iPad Air 2, Macbook Retina on OSX Yosemite, iPhone 6 on Safari / Chrome and seems to be working fine in terms of responsiveness and usability.
+- Hamburger menu issue is to be fixed in next hotfix push
+
 
 ## Prerequisites
 - ruby 2.2.3
