@@ -7,6 +7,10 @@ body, p, span{
 }
 
 /* Font weights */
+.search-param{
+  vertical-align: text-top;
+  font-weight: $text-semibold;
+}
 .text-semibold{
   font-weight: $text-semibold;
 }

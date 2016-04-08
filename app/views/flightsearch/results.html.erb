@@ -43,10 +43,10 @@
 <!-- Content section -->
 <div class="container">
   <div class="row">
-    <!-- widgets -->
-    <div class="col-lg-4 pad-all-none">
 
-      <!-- Flight Search -->
+    <!-- Left nav bar -->
+    <div class="col-lg-4 pad-all-none">
+      <!-- Flight Search Widget - Enter search values -->
       <div class="well  color-background">
         <ul id="tabs" class="nav nav-tabs rounded" data-tabs="tabs">
           <li class="active"><a href="#return" data-toggle="tab">Return</a></li>
@@ -54,64 +54,52 @@
         </ul>
         <div id="my-tab-content" class="tab-content table-bordered">
 
-          <!-- return tab -->
+          <!-- return triptab -->
           <div class="tab-pane active" id="return">
             <div class="row margin-lft-rgt-md">
               <div class="input-group">
                 <div class="form-row">
-                  <label for="firstname" class="margin-all-none">From</label>
+                  <label for="from" class="margin-all-none">From</label>
                   <input type="text" id="from">
                 </div>
 
                 <div class="form-row margin-top-none">
-                  <label for="firstname" class="margin-all-none">Destination</label>
+                  <label for="destination" class="margin-all-none">Destination</label>
                   <input type="text" id="destination">
                 </div>
 
                 <div class="form-row margin-top-none">
-                  <label for="firstname" class="margin-all-none">Departure Date</label>
-                  <input type="text" id="destination">
+                  <label for="departuredate" class="margin-all-none">Departure Date</label>
+
+                  <div class="cols-sm-12">
+                    <div class="form-group margin-all-none">
+                      <div class='input-group date margin-top-xs' id='departure-date'>
+                        <input type='text' class="form-control"/>
+                        <span class="input-group-addon">
+                            <span class="fa fa-calendar"></span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="form-row margin-top-none">
-                  <label for="firstname" class="margin-all-none">Return Date</label>
-                  <input type="text" id="destination">
+                  <label for="returndate" class="margin-all-none">Return Date</label>
+                  <div class="cols-sm-12">
+                    <div class="form-group margin-all-none">
+                      <div class='input-group date margin-top-xs' id='return-date'>
+                        <input type='text' class="form-control"/>
+                      <span class="input-group-addon">
+                          <span class="fa fa-calendar"></span>
+                      </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="form-row margin-top-none">
-                  <label for="firstname" class="margin-all-none">Passengers</label>
-                  <input type="text" id="destination">
-                </div>
-
-                <div class="form-row margin-top-none center">
-                  <button class="btn btn-reg">Search</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- single tab -->
-          <div class="tab-pane" id="single">
-            <div class="row margin-lft-rgt-md">
-              <div class="input-group">
-                <div class="form-row">
-                  <label for="firstname" class="margin-all-none">From</label>
-                  <input type="text" id="from">
-                </div>
-
-                <div class="form-row margin-top-none">
-                  <label for="firstname" class="margin-all-none">Destination</label>
-                  <input type="text" id="destination">
-                </div>
-
-                <div class="form-row margin-top-none">
-                  <label for="firstname" class="margin-all-none">Departure Date</label>
-                  <input type="text" id="destination">
-                </div>
-
-                <div class="form-row margin-top-none">
-                  <label for="firstname" class="margin-all-none">Passengers</label>
-                  <input type="text" id="destination">
+                  <label for="passenger" class="margin-all-none">Passengers</label>
+                  <input type="text" id="passengers">
                 </div>
 
                 <div class="form-row margin-top-none center">
@@ -123,124 +111,182 @@
 
         </div>
       </div>
-
-      <!-- Price Slider -->
+      <!-- Refine Flight Search - Price slider widget-->
       <div class="well color-background">
         <h4>Refine flight search</h4>
 
         <div class="row margin-all-lg">
-          <input type="text" id="price-range" value="" />
+          <input type="text" id="price-range" value=""/>
         </div>
         <!-- /.row -->
       </div>
-
     </div>
-    <!-- main results -->
+
+    <!-- main content -->
     <div class="col-lg-8">
-      <!-- Blog Post -->
-      <!-- Title -->
-      <h1>Blog Post Title</h1>
+      <!-- Search results -->
+      <hgroup class="mb20 margin-btm-lg">
+        <div class="col-lg-9 col-xs-12 pad-all-none">
+          <h3>Your Results</h3>
 
-      <!-- Author -->
-      <p class="lead">
-        by <a href="#">Start Bootstrap</a>
-      </p>
-
-      <hr>
-
-
-      <hr>
-
-      <!-- Preview Image -->
-      <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-
-      <hr>
-
-      <!-- Post Content -->
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error
-        quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus
-        inventore?</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum
-        rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius
-        illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam
-        sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam
-        tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui,
-        necessitatibus, est!</p>
-
-      <hr>
-
-      <!-- Blog Comments -->
-
-      <!-- Comments Form -->
-      <div class="well">
-        <h4>Leave a Comment:</h4>
-
-        <form role="form">
-          <div class="form-group">
-            <textarea class="form-control" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-
-      <hr>
-
-      <!-- Posted Comments -->
-
-      <!-- Comment -->
-      <div class="media">
-        <a class="pull-left" href="#">
-          <img class="media-object" src="http://placehold.it/64x64" alt="">
-        </a>
-
-        <div class="media-body">
-          <h4 class="media-heading">Start Bootstrap
-            <small>August 25, 2014 at 9:30 PM</small>
-          </h4>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus
-          odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-          Donec lacinia congue felis in faucibus.
+          <h2 class="lead margin-btm-none"><strong class="text-primary">5</strong> results were found for the search
+          </h2>
         </div>
-      </div>
-
-      <!-- Comment -->
-      <div class="media">
-        <a class="pull-left" href="#">
-          <img class="media-object" src="http://placehold.it/64x64" alt="">
-        </a>
-
-        <div class="media-body">
-          <h4 class="media-heading">Start Bootstrap
-            <small>August 25, 2014 at 9:30 PM</small>
-          </h4>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus
-          odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-          Donec lacinia congue felis in faucibus.
-          <!-- Nested Comment -->
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="http://placehold.it/64x64" alt="">
-            </a>
-
-            <div class="media-body">
-              <h4 class="media-heading">Nested Start Bootstrap
-                <small>August 25, 2014 at 9:30 PM</small>
-              </h4>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
-              purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
-              fringilla. Donec lacinia congue felis in faucibus.
+        <div class="col-lg-3 col-xs-12 float-right text-right">
+          <div class="margin-top-lg text-left">
+            <div class="cols-lg-12 cols-xs-6">
+              <span class="search-param margin-right-xs">Depart:</span> 1st Jan 2014
+            </div>
+            <div class="cols-lg-12 cols-xs-6">
+              <span class="search-param margin-right-xs">Return:</span> 10 Jan 2014
             </div>
           </div>
-          <!-- End Nested Comment -->
         </div>
-      </div>
+      </hgroup>
+
+      <div class="row"></div>
+
+
+      <!-- begins card -->
+      <section class="col-xs-12 col-sm-6 col-md-12 pad-top-btm-md table-bordered margin-top-sm">
+        <article class="search-result row pad-all-none">
+          <!-- left thumbnail -->
+          <div class="col-xs-12 col-sm-12 col-md-3 pad-top-md">
+            <a href="#" title="Lorem ipsum" class="thumbnail margin-all-none"><img src="http://lorempixel.com/250/140/people" alt="Lorem ipsum"/></a>
+          </div>
+
+          <!-- from destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 text-left pad-all-md">
+            <strong>Departure</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 margin-left-sm text-left pad-all-md">
+            <strong>Arrival</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-12 cols-sm-12 cols-md-3 text-center" style="vertical-align: text-top">
+            <h4 class="pad-right-sm">£125</h4>
+            <button class="btn-small btn-reg-small margin-left-none margin-right-none">Select this flight</button>
+          </div>
+        </article>
+      </section>
+      <!-- ends card -->
+
+      <!-- begins card -->
+      <section class="col-xs-12 col-sm-6 col-md-12 pad-top-btm-md table-bordered margin-top-sm">
+        <article class="search-result row pad-all-none">
+          <!-- left thumbnail -->
+          <div class="col-xs-12 col-sm-12 col-md-3 pad-top-md">
+            <a href="#" title="Lorem ipsum" class="thumbnail margin-all-none"><img src="http://lorempixel.com/250/140/people" alt="Lorem ipsum"/></a>
+          </div>
+
+          <!-- from destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 text-left pad-all-md">
+            <strong>Departure</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 margin-left-sm text-left pad-all-md">
+            <strong>Arrival</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-12 cols-sm-12 cols-md-3 text-center" style="vertical-align: text-top">
+            <h4 class="pad-right-sm">£125</h4>
+            <button class="btn-small btn-reg-small margin-left-none margin-right-none">Select this flight</button>
+          </div>
+        </article>
+      </section>
+      <!-- ends card -->
+
+      <!-- begins card -->
+      <section class="col-xs-12 col-sm-6 col-md-12 pad-top-btm-md table-bordered margin-top-sm">
+        <article class="search-result row pad-all-none">
+          <!-- left thumbnail -->
+          <div class="col-xs-12 col-sm-12 col-md-3 pad-top-md">
+            <a href="#" title="Lorem ipsum" class="thumbnail margin-all-none"><img src="http://lorempixel.com/250/140/people" alt="Lorem ipsum"/></a>
+          </div>
+
+          <!-- from destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 text-left pad-all-md">
+            <strong>Departure</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 margin-left-sm text-left pad-all-md">
+            <strong>Arrival</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-12 cols-sm-12 cols-md-3 text-center" style="vertical-align: text-top">
+            <h4 class="pad-right-sm">£125</h4>
+            <button class="btn-small btn-reg-small margin-left-none margin-right-none">Select this flight</button>
+          </div>
+        </article>
+      </section>
+      <!-- ends card -->
+
+      <!-- begins card -->
+      <section class="col-xs-12 col-sm-6 col-md-12 pad-top-btm-md table-bordered margin-top-sm">
+        <article class="search-result row pad-all-none">
+          <!-- left thumbnail -->
+          <div class="col-xs-12 col-sm-12 col-md-3 pad-top-md">
+            <a href="#" title="Lorem ipsum" class="thumbnail margin-all-none"><img src="http://lorempixel.com/250/140/people" alt="Lorem ipsum"/></a>
+          </div>
+
+          <!-- from destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 text-left pad-all-md">
+            <strong>Departure</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-6 cols-sm-6 cols-md-3 margin-left-sm text-left pad-all-md">
+            <strong>Arrival</strong><br>
+            AL-202 <br>
+            PNQ > DEL <br>
+            Depart: 10:00 AM <br>
+            Arrive 12:00 PM <br>
+          </div>
+
+          <!-- to destination -->
+          <div class="cols-xs-12 cols-sm-12 cols-md-3 text-center" style="vertical-align: text-top">
+            <h4 class="pad-right-sm">£125</h4>
+            <button class="btn-small btn-reg-small margin-left-none margin-right-none">Select this flight</button>
+          </div>
+        </article>
+      </section>
+      <!-- ends card -->
+
     </div>
   </div>
   <!-- /.row -->

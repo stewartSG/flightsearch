@@ -154,6 +154,11 @@
   @include margin-top($sm);
   @include margin-lft($sm);
 }
+// md-style top-left margin
+.margin-top-lft-md{
+  @include margin-top($md);
+  @include margin-lft($md);
+}
 
 // margin overall padding
 .margin-all-xs{

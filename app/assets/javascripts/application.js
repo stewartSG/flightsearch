@@ -13,28 +13,22 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require bootstrap-datepicker
 //= require turbolinks
 //= require vendor/ion.rangeSlider.min
-//= require vendor/bootstrap-select.min
+//= require vendor/bootstrap-datepicker.min
 //= require_tree .
 
-//
-//$(document).ready(function() {
-//  $('#from-destination').selectpicker({
-//    style: 'btn-info',
-//    size: 4
-//    }
-//  );
-//});
 $(document).ready(function () {
   $("#price-range").ionRangeSlider({
     type: "double",
     grid: true,
     min: 0,
     max: 200,
-    from: 1,
-    to: 199,
+    from: 0,
+    to: 200,
     prefix: "£"
   });
+
+  $('#departure-date').datepicker();
+  $('#return-date').datepicker();
 });
