@@ -23,7 +23,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.4.1'
 gem 'font-awesome-sass', '~> 4.3.0'
 gem 'bootstrap-datepicker-rails'
-gem 'select2-rails'
 
 # styleguide generator*
 gem 'hologram'

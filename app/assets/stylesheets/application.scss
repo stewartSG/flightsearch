@@ -23,15 +23,17 @@
 @import "font-awesome";
 
 // mixins for global variables
-@import "globals/variables";
+@import "globals/*";
 
-// media query control
-@import "globals/margins";
-
-// bases for global style control
+// bases for style control
 @import "bases/*";
 
 // components
-@import "/vendor/nouislider.min.css";
-@import "vendor/nouislider.pips.css";
-@import "vendor/nouislider.tooltips.css";
+@import "components/*";
+
+// vendor components
+@import "vendor/slider/ion.rangeSlider.css";
+@import "vendor/slider/ion.rangeSlider.skinFlat.css";
+@import "vendor/bootstrap-select.min.css";
+
+

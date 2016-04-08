@@ -1,0 +1,737 @@
+@import "globals/variables";
+
+/* General button style (reset) */
+.btn {
+  border-radius: 3px;
+  font-size: 17px;
+  color: $color-btn-text;
+  border: none;
+  cursor: pointer;
+  padding: 15px 80px;
+  display: inline-block;
+  margin: 15px;
+  letter-spacing: 1px;
+  outline: none !important;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-medium {
+  border-radius: 3px;
+  font-size: 15px;
+  color: $color-btn-text;
+  border: none;
+  cursor: pointer;
+  padding: 10px 60px;
+  display: inline-block;
+  margin: 15px;
+  letter-spacing: 1px;
+  outline: none !important;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-small {
+  border-radius: 3px;
+  font-size: 14px;
+  color: $color-btn-text;
+  border: none;
+  cursor: pointer;
+  padding: 7px 40px;
+  display: inline-block;
+  margin: 15px;
+  letter-spacing: 1px;
+  outline: none !important;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Disabled class */
+
+.btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus .btn[disabled]:active, .btnDisabled, a.btnDisabled, .btnDisabled:hover, .btnDisabled:focus, .btnDisabled:active {
+  cursor: not-allowed;
+  pointer-events: all;
+}
+
+/* Pseudo elements for icons */
+
+.icon-arrow-left:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f060";
+}
+
+.icon-arrow-right:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f061";
+}
+
+.icon-save:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f0c7";
+}
+
+.icon-attach:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f115";
+}
+
+.icon-search:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f002";
+}
+
+/* Back Button */
+.btn-back {
+  background: $color-btn-back;
+  color: $color-btn-text;
+  padding: 12px 50px 12px 100px;
+
+  &:focus {
+    background: $color-btn-back;
+    color: $color-btn-text;
+    padding: 12px 50px 12px 100px;
+  }
+
+  &:hover {
+    background: $color-btn-back;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-back;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.68;
+    font-size: 105%;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-back-medium {
+  background: $color-btn-back;
+  color: $color-btn-text;
+  padding: 10px 40px 10px 80px;
+
+  &:focus {
+    background: $color-btn-back;
+    color: $color-btn-text;
+    padding: 10px 40px 10px 80px;
+  }
+
+  &:hover {
+    background: $color-btn-back;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-back;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.9;
+    font-size: 90%;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-back-small {
+  background: $color-btn-back;
+  color: $color-btn-text;
+  padding: 8px 30px 8px 60px;
+
+  &:focus {
+    background: $color-btn-back;
+    color: $color-btn-text;
+    padding: 8px 30px 8px 60px;
+  }
+
+  &:hover {
+    background: $color-btn-back;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-back;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 85%;
+    width: 35px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+/* Next Button */
+.btn-next {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 12px 100px 12px 50px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 12px 100px 12px 50px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:after {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    line-height: 2.68;
+    font-size: 105%;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-next-medium {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 10px 80px 10px 40px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 10px 80px 10px 40px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:after {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    line-height: 2.68;
+    font-size: 105%;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-next-small {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 8px 60px 8px 30px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 8px 60px 8px 30px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-back;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:after {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 85%;
+    width: 35px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+/* Attach Button */
+.btn-attach {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 12px 50px 12px 100px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 12px 50px 12px 100px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.68;
+    font-size: 110%;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-attach-medium {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 10px 40px 10px 80px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 10px 40px 10px 80px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.7;
+    font-size: 105%;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-attach-small {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 8px 30px 8px 60px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 8px 30px 8px 60px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.74;
+    font-size: 100%;
+    width: 35px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+/* Regular Buttons */
+.btn-reg {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 12px 50px 12px 50px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 12px 50px 12px 50px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+}
+
+.btn-reg-medium {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 10px 40px 10px 40px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 10px 40px 10px 40px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+}
+
+.btn-reg-small {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 8px 30px 8px 30px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 8px 30px 8px 30px;
+  }
+
+  &:hover {
+    background: $color-btn-next, 10%;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+}
+
+/* Disabled, Warning, and Danger Buttons */
+
+.btn-wng {
+  background: $color-btn-warning;
+  color: $color-btn-text;
+  padding: 12px 50px 12px 50px;
+
+  &:focus {
+    background: $color-btn-warning;
+    color: $color-btn-text;
+    padding: 12px 50px 12px 50px;
+  }
+
+  &:hover {
+    background: $color-btn-warning;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-warning;
+    top: 2px;
+    color: $color-btn-text;
+  }
+}
+
+.btn-dgr {
+  background: $color-btn-danger;
+  color: $color-btn-text;
+  padding: 12px 50px 12px 50px;
+
+  &:focus {
+    background: $color-btn-danger;
+    color: $color-btn-text;
+    padding: 12px 50px 12px 50px;
+  }
+
+  &:hover {
+    background: $color-btn-danger;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-danger;
+    top: 2px;
+    color: $color-btn-text;
+  }
+}
+
+/* search Button */
+.btn-search {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 12px 50px 12px 100px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 12px 50px 12px 100px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.6;
+    font-size: 110%;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-search-medium {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 10px 40px 10px 80px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 10px 40px 10px 80px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.62;
+    font-size: 105%;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+.btn-search-small {
+  background: $color-btn-next;
+  color: $color-btn-text;
+  padding: 8px 30px 8px 60px;
+
+  &:focus {
+    background: $color-btn-next;
+    color: $color-btn-text;
+    padding: 8px 30px 8px 60px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-text;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.7;
+    font-size: 100%;
+    width: 35px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+/* Add Row Button */
+.btn-fullwidth {
+  display: block;
+  width: 100%;
+  background: $color-btn-next;
+  color: $color-btn-text;
+  height: 48px;
+  padding: 12px;
+
+  &:focus {
+    display: block;
+    width: 100%;
+    background: $color-btn-next;
+    color: $color-btn-text;
+    height: 48px;
+    padding: 12px;
+  }
+
+  &:hover {
+    background: $color-btn-next;
+    color: $color-btn-text;
+  }
+
+  &:active {
+    background: $color-btn-next;
+    top: 2px;
+    color: $color-btn-next;
+  }
+
+  &:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 2.68;
+    font-size: 110%;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.075);
+  }
+}
+
+/*doc
+---
+title: buttons
+name: buttons
+category: bases
+---
+
+```html_example
+<!-- Back button large -->
+<button class="btn btn-back icon-arrow-left">Back</button>
+
+<!-- Back button medium -->
+<button class="btn-medium btn-back-medium icon-arrow-left">Back</button>
+
+<!-- Back button small -->
+<button class="btn-small btn-back-small icon-arrow-left">Back</button>
+
+<br>
+
+<!-- Next button large -->
+<button class="btn btn-next icon-arrow-right">Next</button>
+
+<!-- Next button medium -->
+<button class="btn-medium btn-next-medium icon-arrow-right">Next</button>
+
+<!-- Next button small -->
+<button class="btn-small btn-next-small icon-arrow-right">Next</button>
+
+<br>
+<!-- Attach button large -->
+<button class="btn btn-attach icon-attach">Attach Files</button>
+
+<!-- Attach button medium -->
+<button class="btn-medium btn-attach-medium icon-attach">Attach Files</button>
+
+<!-- Attach button small -->
+<button class="btn-small btn-attach-small icon-attach">Attach Files</button>
+
+<br>
+
+<!-- Regular button large -->
+<button class="btn btn-reg">Regular</button>
+
+<!-- Regular button medium -->
+<button class="btn-medium btn-reg-medium">Regular</button>
+
+<!-- Regular button small -->
+<button class="btn-small btn-reg-small">Regular</button>
+
+<br>
+
+<!-- Disabled button -->
+<button class="btn btn-reg" disabled>Disabled</button>
+
+<!-- Warning button -->
+<button class="btn btn-wng">Warning</button>
+
+<!-- Danger button -->
+<button class="btn btn-dgr">Danger</button>
+
+<br>
+
+<!-- Search button large -->
+<button class="btn btn-search icon-search">Search</button>
+
+<!-- Search button medium -->
+<button class="btn-medium btn-search-medium icon-search">Search</button>
+
+<!-- Search button small -->
+<button class="btn-small btn-search-small icon-search">Search</button>
+
+<br>
+
+<!-- Add row button -->
+<button type="button" class="btn btn-fullwidth">Add Row</button>
+
+```
+*/

@@ -1,0 +1,11 @@
+@import "globals/variables";
+@import "bases/colors";
+
+.navbar#flight-navi{
+  background: $color-header;
+  border: 0px;
+
+  &.navbar-inverse .navbar-brand{
+    @extend .color-header-font;
+  }
+}
