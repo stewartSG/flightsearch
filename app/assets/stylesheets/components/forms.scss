@@ -131,6 +131,7 @@ category: forms
 ```html_example
 
 <div class="form-container">
+   <!-- Help Text -->
    <h1>  Help Text</h1>
     <div class="help-text">
       <b>Help Text
@@ -138,37 +139,20 @@ category: forms
       They can be placed in front and/or at the back of fields.
     </div>
 
-
+  <!-- Text fields -->
   <form>
     <h1> Text fields </h1>
+
     <div class="form-row">
-      <label for="firstname">First name</label>
-      <input type="text" id="firstname" name="firstname" placeholder="e.g. John">
+      <label for="fromdestination">Flying from</label>
+      <input type="text" id="fromdestination" name="fromdestination" placeholder="Enter country">
     </div>
-
     <div class="form-row">
-      <label for="lastname">Last name</label>
-      <input type="text" id="lastname" name="lastname">
-    </div>
-
-  </form>
-</div>
-
-
-<div class="form-container">
-  <form>
-    <h2>Input group add-ons</h2>
-    <div class="form-row">
-      <label for="dropdown">Passengers</label>
-      <div class="input-group">
-         <input type="text" id="dropdown" class="form-control" placeholder="">
-         <span class="input-group-addon fa fa-arrow-down"></span>
-      </div>
+      <label for="todestination">Flying to</label>
+      <input type="text" id="todestination" name="todestination" placeholder="Enter Country">
     </div>
   </form>
 </div>
-
-
 
 ```
 */
