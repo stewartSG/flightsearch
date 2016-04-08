@@ -28,6 +28,9 @@
   font-weight: $text-light;
   margin: 0;
 }
+ul.nav.navbar-nav li a.override{
+  color: $color-white;
+}
 
 
 .color_btn_back{ background: $color-btn-back; }

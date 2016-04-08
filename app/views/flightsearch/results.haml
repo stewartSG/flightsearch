@@ -3,7 +3,7 @@
   .container
     / Brand and toggle get grouped for better mobile display
     .navbar-header.color-brand-primary-1
-      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle{"data-target" => "#flightsearch", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
@@ -12,11 +12,11 @@
     #flightsearch.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          %a{:href => "#"} Hotels
+          %a.override{:href => "#"} Hotels
         %li
-          %a{:href => "#"} Car Rentals
+          %a.override{:href => "#"} Car Rentals
         %li
-          %a{:href => "#"} Contact Us
+          %a.override{:href => "#"} Contact Us
   / /.navbar-collapse
   / /.container
 / FIXME This is where our left bar widget lies
