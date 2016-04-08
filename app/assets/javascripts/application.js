@@ -29,6 +29,8 @@ $(document).on('ready page:load', function () {
     to: 200,
     prefix: "£"
   });
-  $('#departure-date').datepicker();
-  $('#return-date').datepicker();
+
+  $('#roundtrip-departure-date').datepicker();
+  $('#roundtrip-return-date').datepicker();
+  $('#singletrip-departure-date').datepicker();
 });
