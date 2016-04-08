@@ -1,5 +1,10 @@
 # FlightSearch v0.1
 
+# Special Notes:
+Demo Site is available via : http://188.166.212.240/
+Access the styleguide generated via Hologram via : http://188.166.212.240/styleguide/bases.html
+Access the actual flight results page via : http://188.166.212.240/result
+
 ## 1.0 Browsers Supported
 - In order to be compatible with as many devices as possible, we support the following browsers : Google Chrome, Mozilla Firefox 3.6+, Opera 12+, Safari 5+, Internet Explorer 9 
 
@@ -9,7 +14,7 @@
 - Bourbon > Good framework to have a quick way to control our scaling of fonts etc from a global variables POV. Good for CSS styling with SASS Mixins too.
 
 ## 3.0 CSS Libraries Used
-We add libraries only when existing framework do not support the feature, so we do not bloat up the site with loading multiple JS libraries. Goal is to be as lean as possible
+We add libraries only when existing framework do not support the feature, so we do not bloat up the site with loading multiple CSS libraries. Goal is to be as lean as possible
 - Fontawesome > Icon fonts are great. Fontawesome is also pretty robust for all kind of use-cases
 
 ## 4.0 JS Libraries used
@@ -21,7 +26,7 @@ We rely on JS libraries primarily for widget / interaction purpose that isn't su
 - Hologram > Picked this so we can generate a living styleguide that everyone can use, nice sublime like editor. Took a while to setup and drop in the SCSS files in but once its up and running its quite useful actually. Used it myself to build the site
 
 ## 6.0 UI Structure
-- UI has to be responsive from day 1, reliable grid system is important. Bootstrap isn't the best choice for this probably cause its a bit heavy but its probbaly the quickest, plans to transition into bourbon 100% in future for Grid and Components control.
+- UI has to be responsive from day 1, reliable grid system is important. Bootstrap isn't the best choice for this probably cause its a bit heavy but its probably the quickest, plans to transition into bourbon 100% in future for Grid and Components control but it also depends on how comfortable the development team is with not using bootstrap because existing components may already be bootstrapped.
 - UI structure aims to be separated into Components, Modules, Global Elements
 - Component - Refers to HTML components that we can re-use easily in any part of the site e.g. input fields, buttons, datepickers etc. We introduce these at the styleguide section so developers can easily drop in to get what they need time to time
 - Modules - Made up of a set of components e.g. our flight result card, it consists of components such as buttons , headers etc. Also designed to be re-used
