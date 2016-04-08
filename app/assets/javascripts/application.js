@@ -18,7 +18,8 @@
 //= require vendor/bootstrap-datepicker.min
 //= require_tree .
 
-$(document).ready(function () {
+// FIXME to be refactored
+$(document).on('ready page:load', function () {
   $("#price-range").ionRangeSlider({
     type: "double",
     grid: true,
@@ -28,7 +29,6 @@ $(document).ready(function () {
     to: 200,
     prefix: "£"
   });
-
   $('#departure-date').datepicker();
   $('#return-date').datepicker();
 });
