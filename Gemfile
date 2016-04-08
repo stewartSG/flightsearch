@@ -27,6 +27,9 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'hologram'
 gem 'bourbon'
 
+# markdown to reduce size and increase readibility
+gem 'haml-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

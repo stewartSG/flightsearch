@@ -1,0 +1,243 @@
+/ FIXME This is where our hamburger menu lies
+%nav#flight-navi.navbar.navbar-inverse.navbar-fixed-top.visible-xs.visible-sm{:role => "navigation"}
+  .container
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header.color-brand-primary-1
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %span.navbar-brand Flight Search Engine
+    #flightsearch.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{:href => "#"} Hotels
+        %li
+          %a{:href => "#"} Car Rentals
+        %li
+          %a{:href => "#"} Contact Us
+  / /.navbar-collapse
+  / /.container
+/ FIXME This is where our left bar widget lies
+%header.business-header.visible-md.visible-lg.visible-xl
+  .container.pad-all-lg.color-header
+    .row
+      .col-lg-12.margin-top-lg
+        %h1.color-header-font Flight Search Engine
+
+/ FIXME This is where our main content lies
+.container
+  .row
+    / Left nav bar
+    .col-lg-4.pad-all-none
+      / Flight Search Widget - Enter search values
+      .well.color-background
+        %ul#tabs.nav.nav-tabs.rounded{"data-tabs" => "tabs"}
+          %li.active
+            %a{"data-toggle" => "tab", :href => "#return"} Return
+          %li
+            %a{"data-toggle" => "tab", :href => "#single"} One Way
+        #my-tab-content.tab-content.table-bordered
+          / return triptab
+          #return.tab-pane.active
+            .row.margin-lft-rgt-md
+              .input-group
+                .form-row
+                  %label.margin-all-none{:for => "from"} From
+                  %input#from{:type => "text"}/
+                .form-row.margin-top-none
+                  %label.margin-all-none{:for => "destination"} Destination
+                  %input#destination{:type => "text"}/
+                .form-row.margin-top-none
+                  %label.margin-all-none{:for => "departuredate"} Departure Date
+                  .cols-sm-12
+                    .form-group.margin-all-none
+                      #departure-date.input-group.date.margin-top-xs
+                        %input.form-control{:type => "text"}/
+                        %span.input-group-addon
+                          %span.fa.fa-calendar
+                .form-row.margin-top-none
+                  %label.margin-all-none{:for => "returndate"} Return Date
+                  .cols-sm-12
+                    .form-group.margin-all-none
+                      #return-date.input-group.date.margin-top-xs
+                        %input.form-control{:type => "text"}/
+                        %span.input-group-addon
+                          %span.fa.fa-calendar
+                .form-row.margin-top-none
+                  %label.margin-all-none{:for => "passenger"} Passengers
+                  %input#passengers{:type => "text"}/
+                .form-row.margin-top-none.center
+                  %button.btn.btn-reg Search
+      / Refine Flight Search - Price slider widget
+      .well.color-background
+        %h4 Refine flight search
+        .row.margin-all-lg
+          %input#price-range{:type => "text", :value => ""}/
+    / /.row
+    / main content
+    .col-lg-8
+      / Search results
+      %hgroup.mb20.margin-btm-lg
+        .col-lg-9.col-xs-12.pad-all-none
+          %h3 Your Results
+          %h2.lead.margin-btm-none
+            %strong.text-primary 5
+            results were found for the search
+        .col-lg-3.col-xs-12.float-right.text-right
+          .margin-top-lg.text-left
+            .cols-lg-12.cols-xs-6
+              %span.search-param.margin-right-xs Depart:
+              1st Jan 2014
+            .cols-lg-12.cols-xs-6
+              %span.search-param.margin-right-xs Return:
+              10 Jan 2014
+      .row
+      / begins card
+      %section.col-xs-12.col-sm-6.col-md-12.pad-top-btm-md.table-bordered.margin-top-sm
+        %article.search-result.row.pad-all-none
+          / left thumbnail
+          .col-xs-12.col-sm-12.col-md-3.pad-top-md
+            %a.thumbnail.margin-all-none{:href => "#", :title => "Lorem ipsum"}
+              %img{:alt => "Lorem ipsum", :src => "http://lorempixel.com/250/140/people"}/
+          / from destination
+          .cols-xs-6.cols-sm-6.cols-md-3.text-left.pad-all-md
+            %strong Departure
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-6.cols-sm-6.cols-md-3.margin-left-sm.text-left.pad-all-md
+            %strong Arrival
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-12.cols-sm-12.cols-md-3.text-center{:style => "vertical-align: text-top"}
+            %h4.pad-right-sm £125
+            %button.btn-small.btn-reg-small.margin-left-none.margin-right-none Select this flight
+      / ends card
+      / begins card
+      %section.col-xs-12.col-sm-6.col-md-12.pad-top-btm-md.table-bordered.margin-top-sm
+        %article.search-result.row.pad-all-none
+          / left thumbnail
+          .col-xs-12.col-sm-12.col-md-3.pad-top-md
+            %a.thumbnail.margin-all-none{:href => "#", :title => "Lorem ipsum"}
+              %img{:alt => "Lorem ipsum", :src => "http://lorempixel.com/250/140/people"}/
+          / from destination
+          .cols-xs-6.cols-sm-6.cols-md-3.text-left.pad-all-md
+            %strong Departure
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-6.cols-sm-6.cols-md-3.margin-left-sm.text-left.pad-all-md
+            %strong Arrival
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-12.cols-sm-12.cols-md-3.text-center{:style => "vertical-align: text-top"}
+            %h4.pad-right-sm £125
+            %button.btn-small.btn-reg-small.margin-left-none.margin-right-none Select this flight
+      / ends card
+      / begins card
+      %section.col-xs-12.col-sm-6.col-md-12.pad-top-btm-md.table-bordered.margin-top-sm
+        %article.search-result.row.pad-all-none
+          / left thumbnail
+          .col-xs-12.col-sm-12.col-md-3.pad-top-md
+            %a.thumbnail.margin-all-none{:href => "#", :title => "Lorem ipsum"}
+              %img{:alt => "Lorem ipsum", :src => "http://lorempixel.com/250/140/people"}/
+          / from destination
+          .cols-xs-6.cols-sm-6.cols-md-3.text-left.pad-all-md
+            %strong Departure
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-6.cols-sm-6.cols-md-3.margin-left-sm.text-left.pad-all-md
+            %strong Arrival
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-12.cols-sm-12.cols-md-3.text-center{:style => "vertical-align: text-top"}
+            %h4.pad-right-sm £125
+            %button.btn-small.btn-reg-small.margin-left-none.margin-right-none Select this flight
+      / ends card
+      / begins card
+      %section.col-xs-12.col-sm-6.col-md-12.pad-top-btm-md.table-bordered.margin-top-sm
+        %article.search-result.row.pad-all-none
+          / left thumbnail
+          .col-xs-12.col-sm-12.col-md-3.pad-top-md
+            %a.thumbnail.margin-all-none{:href => "#", :title => "Lorem ipsum"}
+              %img{:alt => "Lorem ipsum", :src => "http://lorempixel.com/250/140/people"}/
+          / from destination
+          .cols-xs-6.cols-sm-6.cols-md-3.text-left.pad-all-md
+            %strong Departure
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-6.cols-sm-6.cols-md-3.margin-left-sm.text-left.pad-all-md
+            %strong Arrival
+            %br/
+            AL-202
+            %br/
+            PNQ > DEL
+            %br/
+            Depart: 10:00 AM
+            %br/
+            Arrive 12:00 PM
+            %br/
+          / to destination
+          .cols-xs-12.cols-sm-12.cols-md-3.text-center{:style => "vertical-align: text-top"}
+            %h4.pad-right-sm £125
+            %button.btn-small.btn-reg-small.margin-left-none.margin-right-none Select this flight
+  / ends card
+  / /.row
+  %hr/
+/ /.container
