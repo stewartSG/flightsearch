@@ -1,9 +1,9 @@
 # FlightSearch v0.1
 
 # Special Notes:
-Demo Site is available via : http://188.166.212.240/
-Access the styleguide generated via Hologram via : http://188.166.212.240/styleguide/bases.html
-Access the actual flight results page via : http://188.166.212.240/result
+- Demo Site is available via : http://188.166.212.240/
+- Access the styleguide generated via Hologram via : http://188.166.212.240/styleguide/bases.html
+- Access the actual flight results page via : http://188.166.212.240/result
 
 ## 1.0 Browsers Supported
 - In order to be compatible with as many devices as possible, we support the following browsers : Google Chrome, Mozilla Firefox 3.6+, Opera 12+, Safari 5+, Internet Explorer 9 
