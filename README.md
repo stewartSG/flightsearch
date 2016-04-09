@@ -21,7 +21,7 @@ We add libraries only when existing framework do not support the feature, so we 
 ## 4.0 JS Libraries used
 We rely on JS libraries primarily for widget / interaction purpose that isn't supplied with bootstrap 3
 - Ion Rangeslider > Picked this because it has one of the most stars on Github, more importantly it is easy to modify and maintain, some are really a pain to update, supports the browsers we aim to support mentioned above.
-- Bootstrap Form Helper > Added this in to enhance our existing form inputs such as country selector and date selector. Pretty new still but lacks support for older browsers. 
+- Bootstrap Form Helper > Added this in to enhance our existing form inputs such as country selector and date selector. This is a pretty comprehensive library but lacks support for older browsers. 
 
 ## 5.0 Ruby GEMS Used
 - Hologram > Picked this so we can generate a living styleguide that everyone can use, nice sublime like editor. Took a while to setup and drop in the SCSS files in but once its up and running its quite useful actually. Used it myself to build the site
@@ -33,17 +33,22 @@ We rely on JS libraries primarily for widget / interaction purpose that isn't su
 - Modules - Made up of a set of components e.g. our flight result card, it consists of components such as buttons , headers etc. Also designed to be re-used
 - Global Elements - These SASS Mixins variables found under assets/stylesheets/globals/variables.scss controls all aspect of the site ranging from font size scaling, colors and other variables often re-used in stylesheets
 
-## 7.0 Visual Styleguide
+## 7.0 UI Component Structure
+- Basically, after creating UI components in HTML, we turn them into haml files sorted into either /assets/views/flightsearch/components or /assets/views/flightsearch/sections 
+- These sections and components are re-usable in any view pages that resides in /assets/view/flightsearch/ folder
+- Any changes made directly to these components have a direct impact on all views under the parent folder
+
+## 8.0 Visual Styleguide
 - Introduced to make lives as developers or frontend easier with introduction of helper css classes, quick ability to reduce grids to no margin or with additional margins (refer to http://188.166.212.240/styleguide/utility.html)
 - Quick way to drop in on HTML markup for buttons, icons, color schemes etc so its easy to communicate the UI changes to both developers and designers. (refer to http://188.166.212.240/styleguide/bases.html)
 - Purposefully generated with Hologram GEM, so we do not need to invest too much time on generating styleguide, next steps is perhaps add GuardReload or Watcher to compile css changes as we write it and then translate it into styleguide changes automatically. 
 
-## 8.0 To-Do-List in future WIP
+## 9.0 To-Do-List in future WIP
 - Point libraries to CDN to reduce load on client's devices.
 - Transition to Bourbon 100%, abandon Bootstrap because too much bloat. 
 - Allow for graceful fallback for IE9 and above / other browsers such as older version of Safari and Firefox. 
 
-## 9.0 Acknolwedgements
+## 10.0 Acknolwedgements
 - Thank you TW and Infant for giving me the opportunity to work on this.
 
 # Fixes
@@ -51,7 +56,7 @@ We rely on JS libraries primarily for widget / interaction purpose that isn't su
 - Components are now in haml sub-files for easy modifications and improved readibility
 
 # Known issues 
-- Style guide forms section needs some updating to refresh old components phased out
+- Our bootstrap form helper library seems to have issue loading on pageload event, attempts will be made to fix this so country picker will appear on pageload
 - Style guide sections for utility has some templating issues that is causing navigational problems
 
 
