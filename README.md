@@ -7,7 +7,7 @@
 
 ## 1.0 Browsers Supported
 - In order to be compatible with as many devices as possible, we support the following browsers : Google Chrome, Mozilla Firefox 3.6+, Opera 12+, Safari 5+, Internet Explorer 9 
-- We prioritize support for Safari and Chrome as they are default browsers for most users, then move on to support fallbacks o other browers for Mozilla , IE and Opera.
+- We prioritize support for Safari and Chrome as they are default browsers for most users, then move on to support fallbacks on other browers for Mozilla , IE and Opera.
 
 ## 2.0 Frameworks used
 - Ruby on Rails > Because its fast, easy to test and templating engines are great to reduce bloat than vanilla HTML, potential to reduce bloat on JS with coffeescript etc
