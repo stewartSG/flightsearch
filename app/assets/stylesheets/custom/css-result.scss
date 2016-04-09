@@ -15,21 +15,6 @@ body {
   }
 }
 
-.business-header {
-  ///*height: 400px;*/
-  /*background: url('http://placehold.it/1200x1200') center center no-repeat scroll;*/
-  -webkit-background-size: cover;
-  -moz-background-size:cover;
-  background-size:cover;
-  -o-background-size:cover;
-}
-
-/* Customize the text color and shadow color and to optimize text legibility. */
-.tagline {
-  text-shadow: 0 0 10px #000;
-  color:#fff;
-}
-
 .img-center {
   margin: 0 auto
 }
@@ -38,6 +23,16 @@ body {
   text-align: center;
 }
 
-.text-center.price-btn{
+.text-center.price-btn {
   vertical-align: text-top;
+}
+
+.bfh-selectbox-options {
+  &li:first-child {
+    display: none;
+  }
+}
+
+.open>.bfh-datepicker-calendar{
+    margin-left: -32px;
 }

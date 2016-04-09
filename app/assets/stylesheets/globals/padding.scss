@@ -15,7 +15,7 @@
 }
 // no margins
 .pad-btm-none{
-  @include pad-lft($none);
+  @include pad-btm($none);
 }
 .pad-top-none{
   @include pad-top($none);

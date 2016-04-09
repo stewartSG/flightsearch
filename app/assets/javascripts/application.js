@@ -15,22 +15,7 @@
 //= require bootstrap
 //= require turbolinks
 //= require vendor/ion.rangeSlider.min
-//= require vendor/bootstrap-datepicker.min
+//= require vendor/bootstrap-formhelpers.min
+//= require vendor/bootstrap-dropdown.min
+//= require custom/result
 //= require_tree .
-
-// FIXME to be refactored
-$(document).on('ready page:load', function () {
-  $("#price-range").ionRangeSlider({
-    type: "double",
-    grid: true,
-    min: 0,
-    max: 200,
-    from: 0,
-    to: 200,
-    prefix: "£"
-  });
-
-  $('#roundtrip-departure-date').datepicker();
-  $('#roundtrip-return-date').datepicker();
-  $('#singletrip-departure-date').datepicker();
-});

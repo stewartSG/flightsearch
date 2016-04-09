@@ -1,0 +1,23 @@
+.bfh-datepicker.margin-top-xs{"data-align" => "right"}
+  .input-prepend.bfh-datepicker-toggle{"data-toggle" => "bfh-datepicker"}
+    %span.add-on
+      %i.icon-calendar
+    %input.input-medium{:readonly => "readonly", :type => "text"}/
+  .bfh-datepicker-calendar
+    %table.calendar.table.table-bordered
+      %thead
+        %tr.months-header
+          %th.month{:colspan => "4"}
+            %a.previous{:href => "#"}
+              %i.icon-chevron-left
+            %span
+            %a.next{:href => "#"}
+              %i.icon-chevron-right
+          %th.year{:colspan => "3"}
+            %a.previous{:href => "#"}
+              %i.icon-chevron-left
+            %span
+            %a.next{:href => "#"}
+              %i.icon-chevron-right
+        %tr.days-header
+      %tbody

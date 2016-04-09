@@ -11,48 +11,59 @@
         .input-group
           .form-row
             %label.margin-all-none{:for => "from"} From
-            %input#from{:type => "text"}/
+          / from destination
+          = render 'flightsearch/component/countryselector'
+          / end destination from
           .form-row.margin-top-none
             %label.margin-all-none{:for => "destination"} Destination
-            %input#destination{:type => "text"}/
-          .form-row.margin-top-none
-            %label.margin-all-none{:for => "departuredate"} Departure Date
+          / country selector component
+          = render 'flightsearch/component/countryselector'
+          .clearfix
+          / end country selector component
+          .form-row.margin-top-xs
+            %label.margin-all-none.pad-btm-none.pad-top-none{:for => "departuredate"} Departure Date
             .cols-sm-12
               .form-group.margin-all-none
-                #roundtrip-departure-date.input-group.date.margin-top-xs
-                  %input.form-control{:type => "text"}/
-                  %span.input-group-addon
-                    %span.fa.fa-calendar
-          .form-row.margin-top-none
-            %label.margin-all-none{:for => "returndate"} Return Date
+                / date selector component
+                = render 'flightsearch/component/dateselector'
+                / end date selector component
+          .form-row.margin-top-none.pad-top-none
+            %label.margin-all-none.pad-topdown-none{:for => "returndate"} Return Date
             .cols-sm-12
               .form-group.margin-all-none
-                #roundtrip-return-date.input-group.date.margin-top-xs
-                  %input.form-control{:type => "text"}/
-                  %span.input-group-addon
-                    %span.fa.fa-calendar
+                / date selector component
+                = render 'flightsearch/component/dateselector'
+                / date selector component
+          .clearfix
           .form-row.margin-top-none
             %label.margin-all-none{:for => "passenger"} Passengers
             %input#passengers{:type => "text"}/
           .form-row.margin-top-none.center
             %button.btn.btn-reg Search
+    / single trip tab
     #single.tab-pane
       .row.margin-lft-rgt-md
         .input-group
           .form-row
             %label.margin-all-none{:for => "from"} From
-            %input#from{:type => "text"}/
+          / country selector
+          = render 'flightsearch/component/countryselector'
+          / end country selector
           .form-row.margin-top-none
             %label.margin-all-none{:for => "destination"} Destination
-            %input#destination{:type => "text"}/
-          .form-row.margin-top-none
-            %label.margin-all-none{:for => "departuredate"} Departure Date
+          / from country selector
+          = render 'flightsearch/component/countryselector'
+          / end country selector
+          .clearfix
+          .form-row.margin-top-xs
+            %label.margin-all-none.pad-btm-none.pad-top-none{:for => "departuredate"} Departure Date
             .cols-sm-12
               .form-group.margin-all-none
-                #singletrip-departure-date.input-group.date.margin-top-xs
-                  %input.form-control{:type => "text"}/
-                  %span.input-group-addon
-                    %span.fa.fa-calendar
+                / date selector component
+                = render 'flightsearch/component/dateselector'
+                / end date selector component
+          / end departure date selector
+          .clearfix
           .form-row.margin-top-none
             %label.margin-all-none{:for => "passenger"} Passengers
             %input#passengers{:type => "text"}/
