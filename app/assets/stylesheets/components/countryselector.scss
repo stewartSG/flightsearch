@@ -1,0 +1,29 @@
+/*doc
+---
+title: country selector
+name: forms-2
+category: forms
+---
+
+```html_example
+
+<div class="form-container">
+  <form>
+    <p class="icon-title">Country selector w/o flags </p>
+    <div class="bfh-selectbox bfh-countries" data-country="SG" data-flags="false">
+     <input type="hidden">/</input>
+     <a class="bfh-selectbox-toggle" data-toggle="bfh-selectbox" href="#" role="button">
+      <span class="bfh-selectbox-option input-medium"></span>
+        <b class="caret"></b>
+      </a>
+      <div class="bfh-selectbox-options">
+        <div role="listbox">
+          <ul role="option"></ul>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+```
+*/

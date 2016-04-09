@@ -1,0 +1,64 @@
+.bfh-selectbox-options {
+  &li:first-child {
+    display: none;
+  }
+}
+
+.open>.bfh-datepicker-calendar{
+  margin-left: -32px;
+}
+
+/*doc
+---
+title: date picker
+name: forms-3
+category: forms
+---
+
+```html_example
+
+<div class="form-container">
+  <form>
+    <span class="icon-title">Date picker </span>
+      <div class="bfh-datepicker margin-top-xs" data-align="right">
+      <div class="input-prepend bfh-datepicker-toggle" data-toggle="bfh-datepicker">
+        <span class="add-on">
+          <i class="icon-calendar"></i>
+        </span>
+        <input class="input-medium" readonly="readonly" type="text">/</input>
+      </div>
+      <div class="bfh-datepicker-calendar">
+        <table class="calendar table table-bordered">
+          <thead>
+          <tr class="months-header">
+            <th class="month" colspan="4">
+              <a class="previous" href="#">
+                <i class="icon-chevron-left"></i>
+              </a>
+              <span></span>
+              <a class="next" href="#">
+                <i class="icon-chevron-right"></i>
+              </a>
+            </th>
+            <th class="year" colspan="3">
+              <a class="previous" href="#">
+                <i class="icon-chevron-left"></i>
+              </a>
+              <span></span>
+              <a class="next" href="#">
+                <i class="icon-chevron-right"></i>
+              </a>
+            </th>
+          </tr>
+          <tr class="days-header"></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </form>
+</div>
+
+```
+*/
+

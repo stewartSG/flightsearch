@@ -292,108 +292,6 @@
   }
 }
 
-/* Attach Button */
-.btn-attach {
-  background: $color-btn-next;
-  color: $color-btn-text;
-  padding: 12px 50px 12px 100px;
-
-  &:focus {
-    background: $color-btn-next;
-    color: $color-btn-text;
-    padding: 12px 50px 12px 100px;
-  }
-
-  &:hover {
-    background: $color-btn-next;
-    color: $color-btn-text;
-  }
-
-  &:active {
-    background: $color-btn-next;
-    top: 2px;
-    color: $color-btn-text;
-  }
-
-  &:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 2.68;
-    font-size: 110%;
-    width: 50px;
-    background: rgba(0, 0, 0, 0.075);
-  }
-}
-
-.btn-attach-medium {
-  background: $color-btn-next;
-  color: $color-btn-text;
-  padding: 10px 40px 10px 80px;
-
-  &:focus {
-    background: $color-btn-next;
-    color: $color-btn-text;
-    padding: 10px 40px 10px 80px;
-  }
-
-  &:hover {
-    background: $color-btn-next;
-    color: $color-btn-text;
-  }
-
-  &:active {
-    background: $color-btn-next;
-    top: 2px;
-    color: $color-btn-text;
-  }
-
-  &:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 2.7;
-    font-size: 105%;
-    width: 40px;
-    background: rgba(0, 0, 0, 0.075);
-  }
-}
-
-.btn-attach-small {
-  background: $color-btn-next;
-  color: $color-btn-text;
-  padding: 8px 30px 8px 60px;
-
-  &:focus {
-    background: $color-btn-next;
-    color: $color-btn-text;
-    padding: 8px 30px 8px 60px;
-  }
-
-  &:hover {
-    background: $color-btn-next;
-    color: $color-btn-text;
-  }
-
-  &:active {
-    background: $color-btn-next;
-    top: 2px;
-    color: $color-btn-text;
-  }
-
-  &:before {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    line-height: 2.74;
-    font-size: 100%;
-    width: 35px;
-    background: rgba(0, 0, 0, 0.075);
-  }
-}
 
 /* Regular Buttons */
 .btn-reg {
@@ -684,16 +582,6 @@ category: bases
 
 <!-- Next button small -->
 <button class="btn-small btn-next-small icon-arrow-right">Next</button>
-
-<br>
-<!-- Attach button large -->
-<button class="btn btn-attach icon-attach">Attach Files</button>
-
-<!-- Attach button medium -->
-<button class="btn-medium btn-attach-medium icon-attach">Attach Files</button>
-
-<!-- Attach button small -->
-<button class="btn-small btn-attach-small icon-attach">Attach Files</button>
 
 <br>
 

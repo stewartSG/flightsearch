@@ -74,11 +74,9 @@ textarea:focus:-ms-input-placeholder { color: transparent; } /* IE Support ;) */
   }
 }
 
-
-
 /*doc
 ---
-title: fields
+title: input fields
 name: forms-1
 category: forms
 ---
@@ -86,17 +84,11 @@ category: forms
 ```html_example
 
 <div class="form-container">
-  <!-- Text fields -->
   <form>
-    <h1> Text fields </h1>
-
+    <span class="icon-title">Default input fields</span>
     <div class="form-row">
-      <label for="fromdestination">Flying from</label>
-      <input type="text" id="fromdestination" name="fromdestination" placeholder="Enter country">
-    </div>
-    <div class="form-row">
-      <label for="todestination">Flying to</label>
-      <input type="text" id="todestination" name="todestination" placeholder="Enter Country">
+      <label class="margin-all-none" for="passenger">Passengers</label>
+      <input id="passengers" type="text">
     </div>
   </form>
 </div>

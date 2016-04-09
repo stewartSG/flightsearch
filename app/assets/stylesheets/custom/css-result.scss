@@ -27,12 +27,3 @@ body {
   vertical-align: text-top;
 }
 
-.bfh-selectbox-options {
-  &li:first-child {
-    display: none;
-  }
-}
-
-.open>.bfh-datepicker-calendar{
-    margin-left: -32px;
-}
