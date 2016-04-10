@@ -51,7 +51,7 @@ We rely on JS libraries primarily for widget / interaction purpose that isn't su
 ## 10.0 Acknolwedgements
 - Thank you TW and Infant for giving me the opportunity to work on this.
 
-# Fixes
+# Fixes in v0.12
 - Added support for country selector, fixed mobile hamburger menu
 - Components are now in haml sub-files for easy modifications and improved readibility
 
